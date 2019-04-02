@@ -6,10 +6,19 @@
     <description>Recent content in Posts on YJ&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Wed, 03 Apr 2019 00:20:39 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 03 Apr 2019 04:01:08 +0900</lastBuildDate>
     
 	<atom:link href="https://handnew04.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Test1</title>
+      <link>https://handnew04.github.io/test1/</link>
+      <pubDate>Wed, 03 Apr 2019 04:01:08 +0900</pubDate>
+      
+      <guid>https://handnew04.github.io/test1/</guid>
+      <description> 내용을 써보자  hugo 블로그 힘들다 벌써 새벽네시  </description>
+    </item>
     
     <item>
       <title>Hello World</title>
