@@ -90,7 +90,7 @@
 
 @font-face {
   font-family: 'Nanum-Gothic';
-  src: 
-  local('Nanum-Gothic'),
+  font-style: normal;
+  src: local('Nanum-Gothic'),
   url('../fonts/Nanum-Gothic.ttf') format('ttf');
 }
