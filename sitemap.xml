@@ -3,6 +3,20 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://handnew04.github.io/post/hugo-gitpage-%ED%8F%B0%ED%8A%B8-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0/</loc>
+    <lastmod>2019-04-04T18:29:41+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://handnew04.github.io/post/hugo-gitpage-utterance-%EB%8C%93%EA%B8%80%EB%8B%AC%EA%B8%B0/</loc>
+    <lastmod>2019-04-04T18:12:45+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://handnew04.github.io/page/about/</loc>
     <lastmod>2019-04-04T15:33:41+09:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -45,7 +59,7 @@
   
   <url>
     <loc>https://handnew04.github.io/post/</loc>
-    <lastmod>2019-04-03T23:10:58+09:00</lastmod>
+    <lastmod>2019-04-04T18:29:41+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -58,7 +72,28 @@
   
   <url>
     <loc>https://handnew04.github.io/</loc>
-    <lastmod>2019-04-04T15:33:41+09:00</lastmod>
+    <lastmod>2019-04-04T18:29:41+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://handnew04.github.io/tags/github/</loc>
+    <lastmod>2019-04-04T18:29:41+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://handnew04.github.io/categories/hugo/</loc>
+    <lastmod>2019-04-04T18:29:41+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://handnew04.github.io/tags/hugo/</loc>
+    <lastmod>2019-04-04T18:29:41+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>

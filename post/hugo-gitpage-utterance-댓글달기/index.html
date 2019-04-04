@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+  
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.54.0" />
+
+
+<title>Hugo gitpage utterance 댓글달기 - YJ&#39;s Blog</title>
+<meta property="og:title" content="Hugo gitpage utterance 댓글달기 - YJ&#39;s Blog">
+
+
+
+  
+
+
+
+
+
+
+<link rel="stylesheet" href="https://handnew04.github.io/css/main.css" media="all">
+<link rel="stylesheet" href="https://handnew04.github.io/css/fonts.css">
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="https://handnew04.github.io/" class="nav-logo">
+    <img src="https://handnew04.github.io/images/logo.png" 
+         width="50" 
+         height="50" 
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/categories">Categories</a></li>
+    
+    <li><a href="/tags">Tags</a></li>
+    
+    <li><a href="page/about">About</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+  <article class="article">
+    <h1 class="article-title">Hugo gitpage utterance 댓글달기</h1>
+    
+    <span class="article-date">2019-04-04</span>
+    
+
+    <div class="article-content">
+      <blockquote>
+<p><em>이 블로그는 hugo를 이용하여 만들어진 블로그입니다.</em><br>
+<em>블로그에 댓글기능을 달기위하여</em><br>
+<em><a href="https://github.com/utterance">utterance</a> 를 사용하였습니다.</em><br>
+<em>hugo theme 중 natrium 테마를 기준으로 글을 작성하였습니다.</em><br></p>
+</blockquote>
+
+<hr />
+
+<p><a href="https://astrod.github.io/etc/2018/05/28/utterances-%EC%A0%81%EC%9A%A9/"><em>참고블로그</em></a> 를 보고 진행하였는데,
+블로그 내부에 어느부분에 코드를 삽입해야될지 알수가 없었다.</p>
+
+<p>post, 즉 글을 쓸 때 마다 밑에 댓글입력칸이 보여야 했기에 테마 내부에 글의 레이아웃으로 쓰는 파일이 있을거라 생각했다.</p>
+
+<p><strong>자신의hugo블로그 &gt; themes &gt; 자신의테마 &gt; _default &gt; single.html</strong> 에서 찾을 수 있었다.</p>
+
+<pre><code>&lt;/main&gt;
+
+&lt;script src=&quot;https://utteranc.es/client.js&quot;
+        repo=&quot;handnew04/blog-comments&quot;
+        issue-term=&quot;pathname&quot;
+        theme=&quot;github-light&quot;
+        crossorigin=&quot;anonymous&quot;
+        async&gt;
+&lt;/script&gt;
+
+{{ partial &quot;footer.html&quot; . }}
+
+</code></pre>
+
+<p>footer.html 이 시작되기전, 본문이 끝난 아랫부분에 코드를 삽입하였다.</p>
+
+    </div>
+ 
+    <ul class="article-taxonomy">
+                  
+      <hr>
+      <li>
+        <i class="fa fa-category"></i><a href="/categories/hugo">hugo</a>
+      </li>
+      
+    
+      
+      <li>
+        <i class="fa fa-tags"></i><a href="/tags/hugo">hugo</a><a href="/tags/github">github</a>
+      </li>
+      
+  </article>
+
+</main>
+
+<script src="https://utteranc.es/client.js"
+        repo="handnew04/blog-comments"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="https://handnew04.github.io/index.xml" type="application/rss+xml" target="_blank"><i class="fa fa-rss"></i> RSS feed</a>
+          </li>
+          <li>
+            <a href="https://github.com/handnew04"><i class="fa fa-github"></i> Github</a>
+          </li>
+          
+        </ul>
+      </footer>
+
+    </div>
+
+  </body>
+</html>
+

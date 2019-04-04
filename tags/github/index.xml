@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on YJ&#39;s Blog</title>
-    <link>https://handnew04.github.io/post/</link>
-    <description>Recent content in Posts on YJ&#39;s Blog</description>
+    <title>github on YJ&#39;s Blog</title>
+    <link>https://handnew04.github.io/tags/github/</link>
+    <description>Recent content in github on YJ&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
     <lastBuildDate>Thu, 04 Apr 2019 18:29:41 +0900</lastBuildDate>
     
-	<atom:link href="https://handnew04.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://handnew04.github.io/tags/github/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -36,33 +36,6 @@ hugo theme 중 natrium 테마를 기준으로 글을 작성하였습니다.
 post, 즉 글을 쓸 때 마다 밑에 댓글입력칸이 보여야 했기에 테마 내부에 글의 레이아웃으로 쓰는 파일이 있을거라 생각했다.
 자신의hugo블로그 &amp;gt; themes &amp;gt; 자신의테마 &amp;gt; _default &amp;gt; single.html 에서 찾을 수 있었다.
 &amp;lt;/main&amp;gt; &amp;lt;script src=&amp;quot;https://utteranc.es/client.js&amp;quot; repo=&amp;quot;handnew04/blog-comments&amp;quot; issue-term=&amp;quot;pathname&amp;quot; theme=&amp;quot;github-light&amp;quot; crossorigin=&amp;quot;anonymous&amp;quot; async&amp;gt; &amp;lt;/script&amp;gt; {{ partial &amp;quot;footer.</description>
-    </item>
-    
-    <item>
-      <title>실험중</title>
-      <link>https://handnew04.github.io/post/%EC%8B%A4%ED%97%98%EC%A4%91/</link>
-      <pubDate>Wed, 03 Apr 2019 23:10:58 +0900</pubDate>
-      
-      <guid>https://handnew04.github.io/post/%EC%8B%A4%ED%97%98%EC%A4%91/</guid>
-      <description>실험중인 게시글</description>
-    </item>
-    
-    <item>
-      <title>Test1</title>
-      <link>https://handnew04.github.io/post/test1/</link>
-      <pubDate>Wed, 03 Apr 2019 04:01:08 +0900</pubDate>
-      
-      <guid>https://handnew04.github.io/post/test1/</guid>
-      <description> 내용을 써보자  hugo 블로그 힘들다 벌써 새벽네시  </description>
-    </item>
-    
-    <item>
-      <title>Hello World</title>
-      <link>https://handnew04.github.io/post/hello-world/</link>
-      <pubDate>Wed, 03 Apr 2019 00:20:39 +0900</pubDate>
-      
-      <guid>https://handnew04.github.io/post/hello-world/</guid>
-      <description>blog test 블로그 테스트 테스트 중중중</description>
     </item>
     
   </channel>

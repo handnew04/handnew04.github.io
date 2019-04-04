@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+  
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.54.0" />
+
+
+<title>hugo gitpage 폰트 추가하기 - YJ&#39;s Blog</title>
+<meta property="og:title" content="hugo gitpage 폰트 추가하기 - YJ&#39;s Blog">
+
+
+
+  
+
+
+
+
+
+
+<link rel="stylesheet" href="https://handnew04.github.io/css/main.css" media="all">
+<link rel="stylesheet" href="https://handnew04.github.io/css/fonts.css">
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="https://handnew04.github.io/" class="nav-logo">
+    <img src="https://handnew04.github.io/images/logo.png" 
+         width="50" 
+         height="50" 
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/categories">Categories</a></li>
+    
+    <li><a href="/tags">Tags</a></li>
+    
+    <li><a href="page/about">About</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+  <article class="article">
+    <h1 class="article-title">hugo gitpage 폰트 추가하기</h1>
+    
+    <span class="article-date">2019-04-04</span>
+    
+
+    <div class="article-content">
+      
+
+<blockquote>
+<h2 id="hugo-theme-중-natrium-테마를-기준으로-작성하였습니다"><em>hugo theme 중 natrium 테마를 기준으로 작성하였습니다.</em></h2>
+</blockquote>
+
+<p>기존의 글 내용을 보여주는 폰트가 한글지원이 되지 않아서 나눔고딕폰트로 변경하였다.
+인터넷에서 무료로 나눔고딕 폰으를 다운로드 할 수 있다. <a href="https://hangeul.naver.com/download.nhn"><em>다운로드</em></a></p>
+
+<p>나눔고딕 폰트를
+<strong>블로그 &gt; themes &gt; 테마이름 &gt; static &gt; fonts</strong> 에 넣고
+static 의 font.css 에 아래 코드를 추가하였다.</p>
+
+<pre><code>@font-face {
+  font-family: 'Nanum-Gothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Nanum-Gothic.ttf') format('truetype');
+}
+</code></pre>
+
+<p>그 후,
+static 의 main.css 파일에서 본문(body) 등의 font-family 에 Nanum-Gothic 을 추가하였다.</p>
+
+<pre><code>body {
+  font-family: 'Nanum-Gothic', 'Merriweather', serif;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+</code></pre>
+
+    </div>
+ 
+    <ul class="article-taxonomy">
+                  
+      <hr>
+      <li>
+        <i class="fa fa-category"></i><a href="/categories/hugo">hugo</a>
+      </li>
+      
+    
+      
+      <li>
+        <i class="fa fa-tags"></i><a href="/tags/hugo">hugo</a><a href="/tags/github">github</a>
+      </li>
+      
+  </article>
+
+</main>
+
+<script src="https://utteranc.es/client.js"
+        repo="handnew04/blog-comments"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="https://handnew04.github.io/index.xml" type="application/rss+xml" target="_blank"><i class="fa fa-rss"></i> RSS feed</a>
+          </li>
+          <li>
+            <a href="https://github.com/handnew04"><i class="fa fa-github"></i> Github</a>
+          </li>
+          
+        </ul>
+      </footer>
+
+    </div>
+
+  </body>
+</html>
+
