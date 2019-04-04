@@ -18,8 +18,8 @@
       
       <guid>https://handnew04.github.io/post/hugo-gitpage-%ED%8F%B0%ED%8A%B8-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0/</guid>
       <description>hugo theme 중 natrium 테마를 기준으로 작성하였습니다.
-기존의 글 내용을 보여주는 폰트가 한글지원이 되지 않아서 나눔고딕폰트로 변경하였다. 인터넷에서 무료로 나눔고딕 폰으를 다운로드 할 수 있다. 다운로드
- 나눔고딕 폰트를 블로그 &amp;gt; themes &amp;gt; 테마이름 &amp;gt; static &amp;gt; fonts 에 넣고 static 의 font.css 에 아래 코드를 추가하였다.
+ 기존의 글 내용을 보여주는 폰트가 한글지원이 되지 않아서 나눔고딕폰트로 변경하였다. 인터넷에서 무료로 나눔고딕 폰으를 다운로드 할 수 있다. 다운로드
+나눔고딕 폰트를 블로그 &amp;gt; themes &amp;gt; 테마이름 &amp;gt; static &amp;gt; fonts 에 넣고 static 의 font.css 에 아래 코드를 추가하였다.
 @font-face { font-family: &#39;Nanum-Gothic&#39;; font-style: normal; font-weight: 400; src: url(&#39;../fonts/Nanum-Gothic.ttf&#39;) format(&#39;truetype&#39;); }  그 후, static 의 main.css 파일에서 본문(body) 등의 font-family 에 Nanum-Gothic 을 추가하였다.</description>
     </item>
     
