@@ -38,32 +38,5 @@ post, 즉 글을 쓸 때 마다 밑에 댓글입력칸이 보여야 했기에 �
 &amp;lt;/main&amp;gt; &amp;lt;script src=&amp;quot;https://utteranc.es/client.js&amp;quot; repo=&amp;quot;handnew04/blog-comments&amp;quot; issue-term=&amp;quot;pathname&amp;quot; theme=&amp;quot;github-light&amp;quot; crossorigin=&amp;quot;anonymous&amp;quot; async&amp;gt; &amp;lt;/script&amp;gt; {{ partial &amp;quot;footer.</description>
     </item>
     
-    <item>
-      <title>실험중</title>
-      <link>https://handnew04.github.io/post/%EC%8B%A4%ED%97%98%EC%A4%91/</link>
-      <pubDate>Wed, 03 Apr 2019 23:10:58 +0900</pubDate>
-      
-      <guid>https://handnew04.github.io/post/%EC%8B%A4%ED%97%98%EC%A4%91/</guid>
-      <description>실험중인 게시글</description>
-    </item>
-    
-    <item>
-      <title>Test1</title>
-      <link>https://handnew04.github.io/post/test1/</link>
-      <pubDate>Wed, 03 Apr 2019 04:01:08 +0900</pubDate>
-      
-      <guid>https://handnew04.github.io/post/test1/</guid>
-      <description> 내용을 써보자  hugo 블로그 힘들다 벌써 새벽네시  </description>
-    </item>
-    
-    <item>
-      <title>Hello World</title>
-      <link>https://handnew04.github.io/post/hello-world/</link>
-      <pubDate>Wed, 03 Apr 2019 00:20:39 +0900</pubDate>
-      
-      <guid>https://handnew04.github.io/post/hello-world/</guid>
-      <description>blog test 블로그 테스트 테스트 중중중</description>
-    </item>
-    
   </channel>
 </rss>
