@@ -30,6 +30,20 @@
   </url>
   
   <url>
+    <loc>https://handnew04.github.io/categories/hugo/</loc>
+    <lastmod>2019-04-04T18:29:41+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://handnew04.github.io/tags/hugo/</loc>
+    <lastmod>2019-04-04T18:29:41+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://handnew04.github.io/page/</loc>
     <lastmod>2019-04-04T15:33:41+09:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -45,6 +59,7 @@
   
   <url>
     <loc>https://handnew04.github.io/tags/</loc>
+    <lastmod>2019-04-04T18:29:41+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -65,14 +80,14 @@
   
   <url>
     <loc>https://handnew04.github.io/categories/hugo/</loc>
-    <lastmod>2019-04-04T18:29:41+09:00</lastmod>
+    <lastmod>2019-04-04T18:12:45+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://handnew04.github.io/tags/hugo/</loc>
-    <lastmod>2019-04-04T18:29:41+09:00</lastmod>
+    <lastmod>2019-04-04T18:12:45+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
