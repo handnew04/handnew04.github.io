@@ -6,7 +6,7 @@ body {
 }
 
 body {
-  font-family: 'nanum-gothic', 'Merriweather', serif;
+  font-family: 'Nanum-Gothic', 'Merriweather', serif;
   -webkit-hyphens: auto;
   hyphens: auto;
 }
@@ -17,7 +17,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family:'nanum-gothic', 'Lato', sans-serif;
+  font-family:'Nanum-Gothic', 'Lato', sans-serif;
   color: #222;
 }
 
@@ -284,7 +284,7 @@ blockquote {
   padding: 5px 0;
   text-decoration: none;
   font-size: 19px;
-  font-family:'nanum-gothic', 'Lato', sans-serif;
+  font-family:'Nanum-Gothic', 'Lato', sans-serif;
   font-weight: bold;
   color: #222;
   transition: color 300ms;
@@ -311,7 +311,7 @@ blockquote {
 
 .tag-cloud-item a {
   text-decoration: none;
-  font-family: 'nanum-gothic', 'Lato', sans-serif;
+  font-family: 'Nanum-Gothic', 'Lato', sans-serif;
   font-weight: bold;
   color: #222;
   transition: color 300ms;
