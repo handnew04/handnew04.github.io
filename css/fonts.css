@@ -89,8 +89,8 @@
 }
 
 @font-face {
-  font-family: 'Nanum-Gothic';
+  font-family: 'nanum-gothic';
   font-style: normal;
-  src: local('Nanum-Gothic'),
-  url('../fonts/Nanum-Gothic.ttf') format('ttf');
+  font-weight: normal;
+  src: url('../fonts/nanum-gothic.ttf') format('truetype');
 }
