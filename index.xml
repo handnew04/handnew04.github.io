@@ -19,8 +19,7 @@
       
       <guid>https://handnew04.github.io/post/test2/</guid>
       <description>코드테스트
-``` class LinkedList { private Node header = null; //메소드에서 사용 될 머리 노드를 담당. 연결리스트의 시작점. private Node pointer;
-class Node&amp;lt;T&amp;gt; { T data; Node next = null; } public LinkedList() { //LinkedList 클래스의 생성자. 생성시 header의 값이 생김. header = new Node(); } public void append(T d) { //추가 Node&amp;lt;T&amp;gt; item = new Node&amp;lt;&amp;gt;(); //추가 될 노드 생성 item.data = d; //데이터 입력 pointer = header; // 포인터에 헤더를 담아줌 while (pointer.</description>
+ class LinkedList { private Node header = null; //메소드에서 사용 될 머리 노드를 담당. 연결리스트의 시작점. private Node pointer; class Node { T data; Node next = null; } public LinkedList() { //LinkedList 클래스의 생성자. 생성시 header의 값이 생김. header = new Node(); } public void append(T d) { //추가 Node item = new Node(); //추가 될 노드 생성 item.data = d; //데이터 입력 pointer = header; // 포인터에 헤더를 담아줌 while (pointer.</description>
     </item>
     
     
