@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hugo on YJ&#39;s Blog</title>
+    <title>Hugo on Handnew&#39;s blog</title>
     <link>https://handnew04.github.io/tags/hugo/</link>
-    <description>Recent content in Hugo on YJ&#39;s Blog</description>
+    <description>Recent content in Hugo on Handnew&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
     <lastBuildDate>Thu, 04 Apr 2019 18:29:41 +0900</lastBuildDate>
@@ -12,11 +12,11 @@
     
     
     <item>
-      <title>hugo gitpage 폰트 추가하기</title>
-      <link>https://handnew04.github.io/post/hugo-gitpage-%ED%8F%B0%ED%8A%B8-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0/</link>
+      <title>[Hugo] Hugo git블로그 폰트 추가하기</title>
+      <link>https://handnew04.github.io/post/hugo-hugo-git%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%8F%B0%ED%8A%B8-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0/</link>
       <pubDate>Thu, 04 Apr 2019 18:29:41 +0900</pubDate>
       
-      <guid>https://handnew04.github.io/post/hugo-gitpage-%ED%8F%B0%ED%8A%B8-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0/</guid>
+      <guid>https://handnew04.github.io/post/hugo-hugo-git%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%8F%B0%ED%8A%B8-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0/</guid>
       <description>hugo theme 중 natrium 테마를 기준으로 작성하였습니다.
  기존의 글 내용을 보여주는 폰트가 한글지원이 되지 않아서 나눔고딕폰트로 변경하였다. 인터넷에서 무료로 나눔고딕 폰트를 다운로드 할 수 있다. 다운로드
 나눔고딕 폰트를 블로그 &amp;gt; themes &amp;gt; 테마이름 &amp;gt; static &amp;gt; fonts 에 넣고 static 의 font.css 에 아래 코드를 추가하였다.
@@ -24,14 +24,14 @@
     </item>
     
     <item>
-      <title>Hugo gitpage utterance 댓글달기</title>
-      <link>https://handnew04.github.io/post/hugo-gitpage-utterance-%EB%8C%93%EA%B8%80%EB%8B%AC%EA%B8%B0/</link>
+      <title>[Hugo] Hugo gitpage utterances 댓글달기</title>
+      <link>https://handnew04.github.io/post/hugo-hugo-gitpage-utterances-%EB%8C%93%EA%B8%80%EB%8B%AC%EA%B8%B0/</link>
       <pubDate>Thu, 04 Apr 2019 18:12:45 +0900</pubDate>
       
-      <guid>https://handnew04.github.io/post/hugo-gitpage-utterance-%EB%8C%93%EA%B8%80%EB%8B%AC%EA%B8%B0/</guid>
+      <guid>https://handnew04.github.io/post/hugo-hugo-gitpage-utterances-%EB%8C%93%EA%B8%80%EB%8B%AC%EA%B8%B0/</guid>
       <description>이 블로그는 hugo를 이용하여 만들어진 블로그입니다.
 블로그에 댓글기능을 달기위하여
-utterance 를 사용하였습니다.
+utterances 를 사용하였습니다.
 hugo theme 중 natrium 테마를 기준으로 글을 작성하였습니다.
  참고블로그 를 보고 진행하였는데, 블로그 내부에 어느부분에 코드를 삽입해야될지 알수가 없었다.
 post, 즉 글을 쓸 때 마다 밑에 댓글입력칸이 보여야 했기에 테마 내부에 글의 레이아웃으로 쓰는 파일이 있을거라 생각했다.

@@ -7,8 +7,8 @@
 <meta name="generator" content="Hugo 0.54.0" />
 
 
-<title>Hugo gitpage utterance 댓글달기 - YJ&#39;s Blog</title>
-<meta property="og:title" content="Hugo gitpage utterance 댓글달기 - YJ&#39;s Blog">
+<title>[Hugo] Hugo git블로그 폰트 추가하기 - Handnew&#39;s blog</title>
+<meta property="og:title" content="[Hugo] Hugo git블로그 폰트 추가하기 - Handnew&#39;s blog">
 
 
 
@@ -38,8 +38,6 @@
 
   <ul class="nav-links">
     
-    <li><a href="/categories">Categories</a></li>
-    
     <li><a href="/tags">Tags</a></li>
     
     <li><a href="/page/about">About</a></li>
@@ -67,52 +65,46 @@ if (!doNotTrack) {
 
 <main class="content" role="main">
   <article class="article">
-    <h1 class="article-title">Hugo gitpage utterance 댓글달기</h1>
+    <h1 class="article-title">[Hugo] Hugo git블로그 폰트 추가하기</h1>
     
     <span class="article-date">2019-04-04</span>
     
 
     <div class="article-content">
       <blockquote>
-<p><em>이 블로그는 hugo를 이용하여 만들어진 블로그입니다.</em><br>
-<em>블로그에 댓글기능을 달기위하여</em><br>
-<em><a href="https://github.com/utterance">utterance</a> 를 사용하였습니다.</em><br>
-<em>hugo theme 중 natrium 테마를 기준으로 글을 작성하였습니다.</em><br></p>
+<p>hugo theme 중 natrium 테마를 기준으로 작성하였습니다.</p>
 </blockquote>
 
 <hr />
 
-<p><a href="https://astrod.github.io/etc/2018/05/28/utterances-%EC%A0%81%EC%9A%A9/"><em>참고블로그</em></a> 를 보고 진행하였는데,
-블로그 내부에 어느부분에 코드를 삽입해야될지 알수가 없었다.</p>
+<p>기존의 글 내용을 보여주는 폰트가 한글지원이 되지 않아서 나눔고딕폰트로 변경하였다.
+인터넷에서 무료로 나눔고딕 폰트를 다운로드 할 수 있다. <a href="https://hangeul.naver.com/download.nhn"><em>다운로드</em></a></p>
 
-<p>post, 즉 글을 쓸 때 마다 밑에 댓글입력칸이 보여야 했기에 테마 내부에 글의 레이아웃으로 쓰는 파일이 있을거라 생각했다.</p>
+<p>나눔고딕 폰트를
+<strong>블로그 &gt; themes &gt; 테마이름 &gt; static &gt; fonts</strong> 에 넣고
+static 의 font.css 에 아래 코드를 추가하였다.</p>
 
-<p><strong>자신의hugo블로그 &gt; themes &gt; 자신의테마 &gt; _default &gt; single.html</strong> 에서 찾을 수 있었다.</p>
-
-<pre><code>&lt;/main&gt;
-
-&lt;script src=&quot;https://utteranc.es/client.js&quot;
-        repo=&quot;handnew04/blog-comments&quot;
-        issue-term=&quot;pathname&quot;
-        theme=&quot;github-light&quot;
-        crossorigin=&quot;anonymous&quot;
-        async&gt;
-&lt;/script&gt;
-
-{{ partial &quot;footer.html&quot; . }}
-
+<pre><code>@font-face {
+  font-family: 'Nanum-Gothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Nanum-Gothic.ttf') format('truetype');
+}
 </code></pre>
 
-<p>footer.html 이 시작되기전, 본문이 끝난 아랫부분에 코드를 삽입하였다.</p>
+<p>그 후,
+static 의 main.css 파일에서 본문(body) 등의 font-family 에 Nanum-Gothic 을 추가하였다.</p>
+
+<pre><code>body {
+  font-family: 'Nanum-Gothic', 'Merriweather', serif;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+</code></pre>
 
     </div>
  
     <ul class="article-taxonomy">
-                  
-      <hr>
-      <li>
-        <i class="fa fa-category"></i><a href="/categories/hugo">Hugo</a>
-      </li>
       
     
       
