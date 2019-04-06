@@ -27,7 +27,7 @@ code {
   font-size: 12px;
 }
 
-code {
+/* code {
   border-radius: 3px;
   padding: 1px 3px;
   -webkit-hyphens: none;
@@ -45,7 +45,7 @@ pre {
 pre code {
   padding: initial;
   background: transparent;
-} 
+}  */
 
 a:hover,
 a:active {
