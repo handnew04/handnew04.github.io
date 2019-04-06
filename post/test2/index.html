@@ -7,8 +7,8 @@
 <meta name="generator" content="Hugo 0.54.0" />
 
 
-<title>Hugo gitpage utterance 댓글달기 - YJ&#39;s Blog</title>
-<meta property="og:title" content="Hugo gitpage utterance 댓글달기 - YJ&#39;s Blog">
+<title>Test2 - YJ&#39;s Blog</title>
+<meta property="og:title" content="Test2 - YJ&#39;s Blog">
 
 
 
@@ -71,57 +71,48 @@ if (!doNotTrack) {
 
 <main class="content" role="main">
   <article class="article">
-    <h1 class="article-title">Hugo gitpage utterance 댓글달기</h1>
+    <h1 class="article-title">Test2</h1>
     
-    <span class="article-date">2019-04-04</span>
+    <span class="article-date">2019-04-06</span>
     
 
     <div class="article-content">
-      <blockquote>
-<p><em>이 블로그는 hugo를 이용하여 만들어진 블로그입니다.</em><br>
-<em>블로그에 댓글기능을 달기위하여</em><br>
-<em><a href="https://github.com/utterance">utterance</a> 를 사용하였습니다.</em><br>
-<em>hugo theme 중 natrium 테마를 기준으로 글을 작성하였습니다.</em><br></p>
-</blockquote>
+      <p>코드테스트</p>
 
-<hr />
+<p>```    class LinkedList<T> {
+    private Node<T> header = null; //메소드에서 사용 될 머리 노드를 담당. 연결리스트의 시작점.
+    private Node<T> pointer;</p>
 
-<p><a href="https://astrod.github.io/etc/2018/05/28/utterances-%EC%A0%81%EC%9A%A9/"><em>참고블로그</em></a> 를 보고 진행하였는데,
-블로그 내부에 어느부분에 코드를 삽입해야될지 알수가 없었다.</p>
+<pre><code>class Node&lt;T&gt; {
+    T data;
+    Node next = null;
+}
 
-<p>post, 즉 글을 쓸 때 마다 밑에 댓글입력칸이 보여야 했기에 테마 내부에 글의 레이아웃으로 쓰는 파일이 있을거라 생각했다.</p>
+public LinkedList() { //LinkedList 클래스의 생성자. 생성시 header의 값이 생김.
+    header = new Node();
+}
 
-<p><strong>자신의hugo블로그 &gt; themes &gt; 자신의테마 &gt; _default &gt; single.html</strong> 에서 찾을 수 있었다.</p>
+public void append(T d) { //추가
+    Node&lt;T&gt; item = new Node&lt;&gt;(); //추가 될 노드 생성
+    item.data = d; //데이터 입력
+    pointer = header; // 포인터에 헤더를 담아줌
+    while (pointer.next != null) { // pointer.next 의 값이 null 이 되면 반복문이 멈춤 =&gt; 뒤에 연결된 노드가 없음. 즉 마지막 노드 앞 까지 반복문 실행
+        pointer = pointer.next; //마지막 노드가 아닐때 그 다음 연결노드로 바꿔줌
+    }
+    pointer.next = item; //반복문이 끝나고 나면 pointer에 맨마지막 노드가 들어감. 마지막 노드의 next에 새로 만들어진 노드를 추가해줌
+}
 
-<pre><code>&lt;/main&gt;
-
-&lt;script src=&quot;https://utteranc.es/client.js&quot;
-        repo=&quot;handnew04/blog-comments&quot;
-        issue-term=&quot;pathname&quot;
-        theme=&quot;github-light&quot;
-        crossorigin=&quot;anonymous&quot;
-        async&gt;
-&lt;/script&gt;
-
-{{ partial &quot;footer.html&quot; . }}
-
+```
 </code></pre>
-
-<p>footer.html 이 시작되기전, 본문이 끝난 아랫부분에 코드를 삽입하였다.</p>
 
     </div>
  
     <ul class="article-taxonomy">
-                  
-      <hr>
-      <li>
-        <i class="fa fa-category"></i><a href="/categories/hugo">Hugo</a>
-      </li>
       
     
       
       <li>
-        <i class="fa fa-tags"></i><a href="/tags/all">All</a><a href="/tags/hugo">Hugo</a><a href="/tags/github">github</a>
+        <i class="fa fa-tags"></i><a href="/tags/all">All</a>
       </li>
       
   </article>
