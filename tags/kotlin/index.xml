@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kotlin on Handnew&#39;s blog</title>
+    <link>https://handnew04.github.io/tags/kotlin/</link>
+    <description>Recent content in Kotlin on Handnew&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Tue, 09 Apr 2019 14:39:50 +0900</lastBuildDate>
+    
+	<atom:link href="https://handnew04.github.io/tags/kotlin/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>[Kotlin] Kotlin Night 서울 참여 후기</title>
+      <link>https://handnew04.github.io/post/kotlin-kotlin-night-%EC%84%9C%EC%9A%B8-%EC%B0%B8%EC%97%AC-%ED%9B%84%EA%B8%B0/</link>
+      <pubDate>Tue, 09 Apr 2019 14:39:50 +0900</pubDate>
+      
+      <guid>https://handnew04.github.io/post/kotlin-kotlin-night-%EC%84%9C%EC%9A%B8-%EC%B0%B8%EC%97%AC-%ED%9B%84%EA%B8%B0/</guid>
+      <description>코틀린 컨퍼런스, 코틀린 나이트 서울에 다녀왔습니다.🎉 개발자 관련 행사의 첫 참여인 만큼 설렘과 기대로 날짜를 기다렸었다. 🙈
+현재 안드로이드 개발자 취업준비를 하며, 코틀린에 대한 관심이 있었지만 코틀린에 대해 자세히 알진못했다. 그런데 마침, 코틀린 컨퍼런스가 열린다는 소식을 듣게 되었다.
+‘Kotlin Night 서울’ 어떻게 진행 되었을까? 오후 6시부터 10시까지 진행된 코틀린 나이트. 그 세부 내용은 아래와 같다. (실제 행사에서는 전경주님과 강현식님의 순서가 변경 되었다)
+ 입장 등록 18:00~18:30 인공지능은 프로그래머를 대체할까? - 김상균님 18:30~19:10 이펙티브 자바와 코틀린 - 전경주님 19:10~19:50 자바 개발자 관점의 ‘왜 코틀린인가?</description>
+    </item>
+    
+  </channel>
+</rss>

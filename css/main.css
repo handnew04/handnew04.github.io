@@ -11,12 +11,16 @@ body {
   hyphens: auto;
 }
 
-h1,
-h2 {
+h1 {
   font-family: 'Lato', sans-serif;
   color: #222;
 }
 
+h2 {
+    margin-block-end: 0.1em;
+}
+
+h2,
 h3,
 h4,
 h5,
@@ -63,6 +67,10 @@ img {
   margin: 0 auto;
   max-width: 100%;
   height: auto;
+}
+
+mark {
+  background-color: #ECD6FF;
 }
 
 blockquote {
@@ -130,7 +138,8 @@ blockquote {
 }
 
 .nav-links a:hover {
- color: #111;
+ /* color: #111; */
+ color: #c994f5;
 }
 
 .content {
@@ -163,8 +172,8 @@ blockquote {
 
 .article-content a {
   text-decoration: none;
-  color: inherit;
-  border-bottom: medium solid #f0f0f0;
+  color: #007EBD;
+  border-bottom: 1.5px solid #f0f0f0;
   transition: border-color 600ms;
 }
 
@@ -174,8 +183,8 @@ blockquote {
 }
 
 .article-content hr {
-  width: 150px;
-  margin: 50px auto;
+  width: 100%;
+  margin: 2px;
   height: 1px;
   overflow: hidden;
   border: none;
@@ -192,9 +201,9 @@ blockquote {
 }
 
 .article-taxonomy hr {
-  width: 200px;
-  margin: 5px 0 10px;
-  height: 1px;
+  width: 100%;
+  margin: 10px 0 10px;
+  height: 3px;
   border: none;
   background: #e8e8e8;
 }
@@ -235,9 +244,11 @@ blockquote {
 .list-title,
 .category-title,
 .tag-cloud-title {
+  font-family: 'Lato', sans-serif;
   font-size: 32px;
   margin-top: 60px;
   padding-bottom: 10px;
+  margin-block-end: 0.83em;
 }
 
 .list-item {
@@ -267,12 +278,14 @@ blockquote {
   font-family:'Nanum-Gothic', 'Lato', sans-serif;
   font-weight: bold;
   color: #222;
-  border-bottom: 1px solid #ddd;
-  transition: border-color 300ms;
+  /* border-bottom: 1px solid #ddd; */
+  /* transition: border-color 300ms; */
+  transition: color 100ms; 
 }
 
 .list-item a:hover {
-  border-color: #222;
+  /* border-color: #222; */
+  color: #22222252;
 }
 
 .category-item {
