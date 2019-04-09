@@ -24,13 +24,6 @@
   </url>
   
   <url>
-    <loc>https://handnew04.github.io/page/about/</loc>
-    <lastmod>2019-04-04T15:33:41+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://handnew04.github.io/categories/</loc>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
@@ -53,13 +46,6 @@
   <url>
     <loc>https://handnew04.github.io/tags/kotlin/</loc>
     <lastmod>2019-04-09T14:39:50+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://handnew04.github.io/page/</loc>
-    <lastmod>2019-04-04T15:33:41+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
