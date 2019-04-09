@@ -140,7 +140,7 @@ blockquote {
 
 .nav-links a:hover {
  /* color: #111; */
- color: #c994f5;
+ color: #A981CC;
 }
 
 .content {
@@ -338,7 +338,7 @@ blockquote {
 .tag-cloud-item a:active,
 .category-item a:hover,
 .category-item a:active {
-   color: #c994f5;
+   color: #A981CC;
 }
 
 .footer {
