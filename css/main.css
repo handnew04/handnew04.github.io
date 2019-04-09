@@ -135,6 +135,7 @@ blockquote {
 .nav-links a {
   text-decoration: none;
   color: #444;
+  transition: color 100ms; 
 }
 
 .nav-links a:hover {
