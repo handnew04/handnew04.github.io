@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Strategy on Handnew&#39;s blog</title>
+    <link>https://handnew04.github.io/tags/strategy/</link>
+    <description>Recent content in Strategy on Handnew&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Fri, 19 Apr 2019 19:17:56 +0900</lastBuildDate>
+    
+	<atom:link href="https://handnew04.github.io/tags/strategy/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>[디자인패턴] Strategy Pattern</title>
+      <link>https://handnew04.github.io/post/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4-strategy-pattern/</link>
+      <pubDate>Fri, 19 Apr 2019 19:17:56 +0900</pubDate>
+      
+      <guid>https://handnew04.github.io/post/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4-strategy-pattern/</guid>
+      <description>인터페이스 델리게이트 스트레티지 패턴   인터페이스  두 객체간의 연결을 해주는 장치 기능에 대한 선언과 구현의 분리 기능을 사용하는 통로  public interface Ainterface { //기능의 선언 public void funcA(); }  public class Aclass implements Ainterface { @Override public void funcA() { //기능의 구현 System.out.println(&amp;quot;AAA&amp;quot;); } }  public class Main { public static void main(String[] args){ Ainterface ainterface = new Aclass(); //a인터페이스를 사용할 수 있는 통로 ainterface.</description>
+    </item>
+    
+  </channel>
+</rss>

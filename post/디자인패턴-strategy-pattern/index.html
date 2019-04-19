@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+  
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.54.0" />
+
+
+<title>[디자인패턴] Strategy Pattern - Handnew&#39;s blog</title>
+<meta property="og:title" content="[디자인패턴] Strategy Pattern - Handnew&#39;s blog">
+
+
+
+  
+
+
+
+
+
+
+<link rel="stylesheet" href="https://handnew04.github.io/css/main.css" media="all">
+<link rel="stylesheet" href="https://handnew04.github.io/css/fonts.css">
+<link rel="icon" type="image/png" sizes="32x32" href="https://handnew04.github.io/images/favicon-32x32.png">
+<link rel="stylesheet" href="https://handnew04.github.io/css/rainbow.css">
+<script src="https://handnew04.github.io/css/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="https://handnew04.github.io/" class="nav-logo">
+    <img src="https://handnew04.github.io/images/logo.png" 
+         width="50" 
+         height="50" 
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/tags">Tags</a></li>
+    
+    <li><a href="/search">Search</a></li>
+    
+  </ul>
+
+</nav>
+
+        
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-137481057-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+      </header>
+      
+
+
+<main class="content" role="main">
+  <article class="article">
+    <h1 class="article-title">[디자인패턴] Strategy Pattern</h1>
+    
+    <span class="article-date">2019-04-19</span>
+    
+
+    <div class="article-content">
+      
+
+<blockquote>
+<ol>
+<li>인터페이스</li>
+<li>델리게이트</li>
+<li>스트레티지 패턴</li>
+</ol>
+</blockquote>
+
+<h2 id="인터페이스">인터페이스</h2>
+
+<hr />
+
+<ul>
+<li>두 객체간의 연결을 해주는 장치</li>
+<li>기능에 대한 선언과 구현의 분리</li>
+<li>기능을 사용하는 통로</li>
+</ul>
+
+<pre><code>public interface Ainterface {
+    //기능의 선언
+    public void funcA();
+}
+</code></pre>
+
+<pre><code>public class Aclass implements Ainterface {
+    @Override
+    public void funcA() { //기능의 구현
+        System.out.println(&quot;AAA&quot;);
+    }
+}
+</code></pre>
+
+<pre><code>public class Main {
+    public static void main(String[] args){
+        Ainterface ainterface = new Aclass();
+
+        //a인터페이스를 사용할 수 있는 통로
+        ainterface.funcA();
+</code></pre>
+
+<h2 id="델리게이트">델리게이트</h2>
+
+<hr />
+
+<ul>
+<li>메소드의 역할을 위임한다</li>
+<li>어떤 메소드의 처리를 다른 인스턴스의 메서드에 맡긴다</li>
+</ul>
+
+<pre><code>public class Aobj {
+
+    Ainterface ainterface;
+
+    public Aobj(){
+        ainterface = new Aclass();
+    }
+
+    public void funcAA(){
+
+        //위임
+        ainterface.funcA();
+        ainterface.funcA();
+       // System.out.println(&quot;AAA&quot;);
+       // System.out.println(&quot;AAA&quot;);
+
+        //~기능이 필요합니다. 개발해주세요
+    }
+}
+</code></pre>
+
+<h2 id="스트레티지-패턴">스트레티지 패턴</h2>
+
+<hr />
+
+<ul>
+<li>여러가지 알고리즘을 하나의 추상적인 접근점(인터페이스)을 만들어 접근점에서 서로 교환 가능하도록 하는 패턴</li>
+</ul>
+
+<p><img src="/images/post/designpattern_strategy1.png" alt="" /></p>
+
+<h3 id="예제-캐릭터와-무기-두종류-칼-검-의-구현">예제) 캐릭터와 무기 두종류(칼, 검)의 구현</h3>
+
+<p>무기 인터페이스</p>
+
+<pre><code>public interface Weapon {
+    public void attack();
+}
+</code></pre>
+
+<p>칼 클래스</p>
+
+<pre><code>public class Knife implements Weapon {
+    @Override
+    public void attack() {
+        System.out.println(&quot;칼 공격&quot;);
+    }
+}
+</code></pre>
+
+<p>검 클래스</p>
+
+<pre><code>public class Sword implements Weapon {
+    @Override
+    public void attack() {
+        System.out.println(&quot;검 공격&quot;);
+    }
+}
+</code></pre>
+
+<p>캐릭터 클래스</p>
+
+<pre><code>public class GameCharacter {
+    //접근점(게임 캐릭터가 무기를 들고있음)
+    private Weapon weapon;
+
+    //교환기능(무기를 바꿀 수 있음)
+    public void setWeapon(Weapon weapon) {
+        this.weapon = weapon;
+    }
+
+    public void attack() {
+        if(weapon == null){ //무기가 없을 시
+            System.out.println(&quot;맨손 공격&quot;);
+        }else{
+
+            //델리게이트
+            weapon.attack();
+        }
+    }
+}
+</code></pre>
+
+<p>메인 메서드</p>
+
+<pre><code>public class Main {
+    public static void main(String[] args){
+
+        GameCharacter character = new GameCharacter();
+
+        character.attack();
+
+        character.setWeapon(new Knife());
+        character.attack();
+
+        character.setWeapon(new Sword());
+        character.attack();
+    }
+}
+</code></pre>
+
+<p>새로운 무기 &lsquo;도끼&rsquo;의 추가</p>
+
+<pre><code>public class Ax implements Weapon {
+    @Override
+    public void attack() {
+        System.out.println(&quot;도끼 공격&quot;);
+    }
+}
+</code></pre>
+
+<p>도끼클래스를 추가 생성하면 다른 것을 건들이지 않고
+메인에서 사용</p>
+
+<pre><code> character.setWeapon(new Sword());
+        character.attack();
+</code></pre>
+
+    </div>
+ 
+    <ul class="article-taxonomy">
+        <hr>
+      
+    
+      
+      <li>
+        <i class="fa fa-tags"></i><a href="/tags/designpattern">DesignPattern</a><a href="/tags/strategy">Strategy</a>
+      </li>
+      
+  </article>
+
+</main>
+
+<script src="https://utteranc.es/client.js"
+        repo="handnew04/blog-comments"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="https://handnew04.github.io/index.xml" type="application/rss+xml" target="_blank"><i class="fa fa-rss"></i> RSS feed</a>
+          </li>
+          <li>
+            <a href="https://github.com/handnew04"><i class="fa fa-github"></i> Github</a>
+          </li>
+          
+        </ul>
+      </footer>
+
+    </div>
+
+  </body>
+</html>
+
