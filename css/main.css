@@ -35,25 +35,9 @@ code {
   font-size: 12px;
 }
 
-/* code {
-  border-radius: 3px;
-  padding: 1px 3px;
-  -webkit-hyphens: none;
-  hyphens: none;
-}
-
 pre {
-  overflow-x: auto;
-  padding: 8px 12px;
-  border-radius: 3px;
-  background: transparent;
-  color: transparent;
+margin-top: 3px;
 }
-
-pre code {
-  padding: initial;
-  background: transparent;
-}  */
 
 a:hover,
 a:active {
@@ -168,7 +152,7 @@ blockquote {
 }
 
 .article-content p {
-  margin: 15px 0 25px;
+  margin: 15px 0px 0px;
 }
 
 .article-content a {
