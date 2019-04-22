@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Handnew&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 21 Apr 2019 16:11:26 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 22 Apr 2019 19:05:14 +0900</lastBuildDate>
     
 	<atom:link href="https://handnew04.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>DesignPattern</title>
       <link>https://handnew04.github.io/tags/designpattern/</link>
-      <pubDate>Sun, 21 Apr 2019 16:11:26 +0900</pubDate>
+      <pubDate>Mon, 22 Apr 2019 19:05:14 +0900</pubDate>
       
       <guid>https://handnew04.github.io/tags/designpattern/</guid>
       <description></description>
@@ -44,6 +44,15 @@
       <pubDate>Fri, 19 Apr 2019 19:17:56 +0900</pubDate>
       
       <guid>https://handnew04.github.io/tags/strategy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Template Method</title>
+      <link>https://handnew04.github.io/tags/template-method/</link>
+      <pubDate>Mon, 22 Apr 2019 19:05:14 +0900</pubDate>
+      
+      <guid>https://handnew04.github.io/tags/template-method/</guid>
       <description></description>
     </item>
     
