@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+  
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.54.0" />
+
+
+<title>[디자인패턴] Singleton Pattern - Handnew&#39;s blog</title>
+<meta property="og:title" content="[디자인패턴] Singleton Pattern - Handnew&#39;s blog">
+<meta property="og:type" content="article">
+<meta property="description" content="싱글톤 패턴이란 단 하나의 인스턴스만을 사용하는 패턴이다.  예시 스피커의 볼륨을 조절하는 클래스의 인스턴스가 여러개라면 조절 할 때 마다 모든 인스턴스를 조절 해야하는 번거로움이 생긴다.
+그래서 하나의 인스턴스를 사용한다.
+하나의 인스턴스를 사용하기 위해 static으로 선언한다.
+package Singleton; public class SystemSpeaker { static private SystemSpeaker instance; private int volume; private SystemSpeaker() { volume = 5; } public static SystemSpeaker getInstance() { if (instance == null) { //시스템 스피커/ 아직 생성이 되지 않았을때는 생성을 해주고 instance = new SystemSpeaker(); } //instance가 생성되어 있다면 그 인스턴스를 리턴한다.">
+<meta property="og:url" content="https://handnew04.github.io/post/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4-singleton-pattern/" >
+
+
+
+
+<meta property="keywords" content ="디자인패턴, 싱글톤패턴">
+
+
+
+
+<link rel="stylesheet" href="https://handnew04.github.io/css/main.css" media="all">
+<link rel="stylesheet" href="https://handnew04.github.io/css/fonts.css">
+<link rel="icon" type="image/png" sizes="32x32" href="https://handnew04.github.io/images/favicon-32x32.png">
+<link rel="stylesheet" href="https://handnew04.github.io/css/rainbow.css">
+<script src="https://handnew04.github.io/css/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="https://handnew04.github.io/" class="nav-logo">
+    <img src="https://handnew04.github.io/images/logo.png" 
+         width="50" 
+         height="50" 
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/tags">Tags</a></li>
+    
+    <li><a href="/search">Search</a></li>
+    
+  </ul>
+
+</nav>
+
+        
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-137481057-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+      </header>
+      
+
+
+<main class="content" role="main">
+  <article class="article">
+    <h1 class="article-title">[디자인패턴] Singleton Pattern</h1>
+    
+    <span class="article-date">2019-04-24</span>
+    
+
+    <div class="article-content">
+      
+
+<ul>
+<li>싱글톤 패턴이란 단 하나의 인스턴스만을 사용하는 패턴이다.</li>
+</ul>
+
+<h3 id="예시">예시</h3>
+
+<p>스피커의 볼륨을 조절하는 클래스의 인스턴스가 여러개라면 조절 할 때 마다 모든 인스턴스를 조절 해야하는 번거로움이 생긴다.<br>
+그래서 하나의 인스턴스를 사용한다.<br>
+하나의 인스턴스를 사용하기 위해 static으로 선언한다.</p>
+
+<pre><code>package Singleton;
+
+public class SystemSpeaker {
+    static private SystemSpeaker instance;
+    private int volume;
+
+    private SystemSpeaker() {
+        volume = 5;
+    }
+
+    public static SystemSpeaker getInstance() {
+        if (instance == null) {
+            //시스템 스피커/ 아직 생성이 되지 않았을때는 생성을 해주고 
+            instance = new SystemSpeaker();
+        }
+        //instance가 생성되어 있다면 그 인스턴스를 리턴한다.
+        return instance;
+    }
+
+    public int getVolume() {
+        return volume;
+    }
+
+    public void setVolume(int volume) {
+        this.volume = volume;
+    }
+}
+</code></pre>
+
+<h4 id="메인-클래스-br">메인 클래스<br></h4>
+
+<p>같은 인스턴스를 사용하기 때문에 speaker1의 볼륨을 조절하던 speaker2의 볼륨을 조절하던 볼륨값은 둘다 바뀐다.</p>
+
+<pre><code>public class Main {
+    public static void main(String[] args){
+        SystemSpeaker speaker1 = SystemSpeaker.getInstance();
+        SystemSpeaker speaker2 = SystemSpeaker.getInstance();
+
+        System.out.println(speaker1.getVolume());
+        System.out.println(speaker2.getVolume());
+
+        speaker1.setVolume(10);
+
+        System.out.println(speaker1.getVolume());
+        System.out.println(speaker2.getVolume());
+
+        speaker2.setVolume(13);
+
+        System.out.println(speaker1.getVolume());
+        System.out.println(speaker2.getVolume());
+
+    }
+}
+</code></pre>
+
+<h4 id="실행결과">실행결과</h4>
+
+<p><img src="/images/post/designpattern-singleton1.jpg" alt="" /></p>
+
+<p><br></p>
+
+<h3 id="reference">Reference</h3>
+
+<ul>
+<li><a href="https://youtu.be/5jgpu9-ywtY">자바 디자인 패턴의 이해</a></li>
+</ul>
+
+    </div>
+ 
+    <ul class="article-taxonomy">
+        <hr>
+      
+    
+      
+      <li>
+        <i class="fa fa-tags"></i><a href="/tags/designpattern">DesignPattern</a><a href="/tags/singleton">Singleton</a>
+      </li>
+      
+  </article>
+
+</main>
+
+<script src="https://utteranc.es/client.js"
+        repo="handnew04/blog-comments"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="https://handnew04.github.io/index.xml" type="application/rss+xml" target="_blank"><i class="fa fa-rss"></i> RSS feed</a>
+          </li>
+          <li>
+            <a href="https://github.com/handnew04"><i class="fa fa-github"></i> Github</a>
+          </li>
+          
+        </ul>
+      </footer>
+
+    </div>
+
+  </body>
+</html>
+

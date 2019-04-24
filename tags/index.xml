@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Handnew&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 22 Apr 2019 19:05:14 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 24 Apr 2019 13:26:32 +0900</lastBuildDate>
     
 	<atom:link href="https://handnew04.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>DesignPattern</title>
       <link>https://handnew04.github.io/tags/designpattern/</link>
-      <pubDate>Mon, 22 Apr 2019 19:05:14 +0900</pubDate>
+      <pubDate>Wed, 24 Apr 2019 13:26:32 +0900</pubDate>
       
       <guid>https://handnew04.github.io/tags/designpattern/</guid>
       <description></description>
@@ -35,6 +35,15 @@
       <pubDate>Tue, 09 Apr 2019 14:39:50 +0900</pubDate>
       
       <guid>https://handnew04.github.io/tags/kotlin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Singleton</title>
+      <link>https://handnew04.github.io/tags/singleton/</link>
+      <pubDate>Wed, 24 Apr 2019 13:26:32 +0900</pubDate>
+      
+      <guid>https://handnew04.github.io/tags/singleton/</guid>
       <description></description>
     </item>
     
