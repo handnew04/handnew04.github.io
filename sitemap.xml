@@ -3,6 +3,20 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://handnew04.github.io/post/wil-7%EC%9B%94-3%EC%A3%BC%EC%B0%A8/</loc>
+    <lastmod>2019-07-22T23:06:14+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://handnew04.github.io/post/wil-7%EC%9B%94-2%EC%A3%BC%EC%B0%A8/</loc>
+    <lastmod>2019-07-22T23:01:20+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://handnew04.github.io/post/wil-7%EC%9B%94-1%EC%A3%BC%EC%B0%A8/</loc>
     <lastmod>2019-07-22T22:38:06+09:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -74,7 +88,7 @@
   
   <url>
     <loc>https://handnew04.github.io/</loc>
-    <lastmod>2019-07-22T22:38:06+09:00</lastmod>
+    <lastmod>2019-07-22T23:06:14+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -95,7 +109,14 @@
   
   <url>
     <loc>https://handnew04.github.io/post/</loc>
-    <lastmod>2019-07-22T22:38:06+09:00</lastmod>
+    <lastmod>2019-07-22T23:06:14+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://handnew04.github.io/tags/r/</loc>
+    <lastmod>2019-07-22T23:01:20+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -130,7 +151,7 @@
   
   <url>
     <loc>https://handnew04.github.io/tags/wil/</loc>
-    <lastmod>2019-07-22T22:38:06+09:00</lastmod>
+    <lastmod>2019-07-22T23:06:14+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -143,8 +164,50 @@
   </url>
   
   <url>
+    <loc>https://handnew04.github.io/tags/codereview/</loc>
+    <lastmod>2019-07-22T23:06:14+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://handnew04.github.io/tags/error/</loc>
+    <lastmod>2019-07-22T23:01:20+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://handnew04.github.io/tags/font/</loc>
+    <lastmod>2019-07-22T23:06:14+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://handnew04.github.io/tags/github/</loc>
     <lastmod>2019-04-04T18:29:41+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://handnew04.github.io/tags/keydown/</loc>
+    <lastmod>2019-07-22T23:01:20+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://handnew04.github.io/tags/lifecycle/</loc>
+    <lastmod>2019-07-22T23:01:20+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://handnew04.github.io/tags/logcat/</loc>
+    <lastmod>2019-07-22T23:06:14+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -157,8 +220,22 @@
   </url>
   
   <url>
+    <loc>https://handnew04.github.io/tags/windowsoftinputmode/</loc>
+    <lastmod>2019-07-22T23:01:20+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://handnew04.github.io/tags/%EC%B0%B8%EC%97%AC/</loc>
     <lastmod>2019-04-09T14:39:50+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://handnew04.github.io/tags/%ED%95%B4%EC%83%81%EB%8F%84/</loc>
+    <lastmod>2019-07-22T23:01:20+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
