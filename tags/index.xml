@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Handnew&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Wed, 24 Apr 2019 13:26:32 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 22 Jul 2019 22:38:06 +0900</lastBuildDate>
     
 	<atom:link href="https://handnew04.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>AdvertisingIdClient</title>
+      <link>https://handnew04.github.io/tags/advertisingidclient/</link>
+      <pubDate>Mon, 22 Jul 2019 22:38:06 +0900</pubDate>
+      
+      <guid>https://handnew04.github.io/tags/advertisingidclient/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>DesignPattern</title>
@@ -66,6 +75,15 @@
     </item>
     
     <item>
+      <title>WIL</title>
+      <link>https://handnew04.github.io/tags/wil/</link>
+      <pubDate>Mon, 22 Jul 2019 22:38:06 +0900</pubDate>
+      
+      <guid>https://handnew04.github.io/tags/wil/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>adapter</title>
       <link>https://handnew04.github.io/tags/adapter/</link>
       <pubDate>Sun, 21 Apr 2019 16:11:26 +0900</pubDate>
@@ -80,15 +98,6 @@
       <pubDate>Thu, 04 Apr 2019 18:29:41 +0900</pubDate>
       
       <guid>https://handnew04.github.io/tags/github/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>참여</title>
-      <link>https://handnew04.github.io/tags/%EC%B0%B8%EC%97%AC/</link>
-      <pubDate>Tue, 09 Apr 2019 14:39:50 +0900</pubDate>
-      
-      <guid>https://handnew04.github.io/tags/%EC%B0%B8%EC%97%AC/</guid>
       <description></description>
     </item>
     

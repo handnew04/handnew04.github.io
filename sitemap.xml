@@ -3,6 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://handnew04.github.io/post/wil-7%EC%9B%94-1%EC%A3%BC%EC%B0%A8/</loc>
+    <lastmod>2019-07-22T22:38:06+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://handnew04.github.io/post/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4-singleton-pattern/</loc>
     <lastmod>2019-04-24T13:26:32+09:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -52,6 +59,13 @@
   </url>
   
   <url>
+    <loc>https://handnew04.github.io/tags/advertisingidclient/</loc>
+    <lastmod>2019-07-22T22:38:06+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://handnew04.github.io/tags/designpattern/</loc>
     <lastmod>2019-04-24T13:26:32+09:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -60,7 +74,7 @@
   
   <url>
     <loc>https://handnew04.github.io/</loc>
-    <lastmod>2019-04-24T13:26:32+09:00</lastmod>
+    <lastmod>2019-07-22T22:38:06+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -81,7 +95,7 @@
   
   <url>
     <loc>https://handnew04.github.io/post/</loc>
-    <lastmod>2019-04-24T13:26:32+09:00</lastmod>
+    <lastmod>2019-07-22T22:38:06+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -102,7 +116,7 @@
   
   <url>
     <loc>https://handnew04.github.io/tags/</loc>
-    <lastmod>2019-04-24T13:26:32+09:00</lastmod>
+    <lastmod>2019-07-22T22:38:06+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -110,6 +124,13 @@
   <url>
     <loc>https://handnew04.github.io/tags/template-method/</loc>
     <lastmod>2019-04-22T19:05:14+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://handnew04.github.io/tags/wil/</loc>
+    <lastmod>2019-07-22T22:38:06+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -124,6 +145,13 @@
   <url>
     <loc>https://handnew04.github.io/tags/github/</loc>
     <lastmod>2019-04-04T18:29:41+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://handnew04.github.io/tags/weakreference/</loc>
+    <lastmod>2019-07-22T22:38:06+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
