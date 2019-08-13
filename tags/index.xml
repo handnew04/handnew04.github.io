@@ -48,11 +48,29 @@
     </item>
     
     <item>
+      <title>LocalBroadcastManager</title>
+      <link>https://handnew04.github.io/tags/localbroadcastmanager/</link>
+      <pubDate>Tue, 13 Aug 2019 22:10:43 +0900</pubDate>
+      
+      <guid>https://handnew04.github.io/tags/localbroadcastmanager/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>R</title>
       <link>https://handnew04.github.io/tags/r/</link>
       <pubDate>Mon, 22 Jul 2019 23:01:20 +0900</pubDate>
       
       <guid>https://handnew04.github.io/tags/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SQL</title>
+      <link>https://handnew04.github.io/tags/sql/</link>
+      <pubDate>Tue, 13 Aug 2019 22:10:43 +0900</pubDate>
+      
+      <guid>https://handnew04.github.io/tags/sql/</guid>
       <description></description>
     </item>
     
@@ -75,29 +93,11 @@
     </item>
     
     <item>
-      <title>Template Method</title>
-      <link>https://handnew04.github.io/tags/template-method/</link>
-      <pubDate>Mon, 22 Apr 2019 19:05:14 +0900</pubDate>
+      <title>Swagger</title>
+      <link>https://handnew04.github.io/tags/swagger/</link>
+      <pubDate>Tue, 13 Aug 2019 22:10:43 +0900</pubDate>
       
-      <guid>https://handnew04.github.io/tags/template-method/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>WIL</title>
-      <link>https://handnew04.github.io/tags/wil/</link>
-      <pubDate>Mon, 22 Jul 2019 23:06:14 +0900</pubDate>
-      
-      <guid>https://handnew04.github.io/tags/wil/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>adapter</title>
-      <link>https://handnew04.github.io/tags/adapter/</link>
-      <pubDate>Sun, 21 Apr 2019 16:11:26 +0900</pubDate>
-      
-      <guid>https://handnew04.github.io/tags/adapter/</guid>
+      <guid>https://handnew04.github.io/tags/swagger/</guid>
       <description></description>
     </item>
     
