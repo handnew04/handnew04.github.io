@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>enum on Handnew&#39;s blog</title>
+    <link>https://handnew04.github.io/tags/enum/</link>
+    <description>Recent content in enum on Handnew&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Tue, 13 Aug 2019 22:05:18 +0900</lastBuildDate>
+    
+	<atom:link href="https://handnew04.github.io/tags/enum/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>[JAVA] enum type</title>
+      <link>https://handnew04.github.io/post/java-enum-type/</link>
+      <pubDate>Tue, 13 Aug 2019 22:05:18 +0900</pubDate>
+      
+      <guid>https://handnew04.github.io/post/java-enum-type/</guid>
+      <description>열거 자료형  기존의 java 에서 상수를 사용할 때 아래와 같이 정의한다.
+//과일 public static int F_APPLE = 1; public static int F_MANGO = 2; public static int F_MELON = 3; //의류 public static int C_ZARA = 1; public static int C_MANGO = 2; public static int C_SPAO = 3;  위의 코드에서 2와 비교를 할 때 과일과 의류의 MANGO 는 따로 정의 되어 있지만 비교시에 둘 다 2로써 값이 같다고 여기게 된다.</description>
+    </item>
+    
+  </channel>
+</rss>

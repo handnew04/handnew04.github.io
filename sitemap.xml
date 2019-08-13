@@ -3,6 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://handnew04.github.io/post/java-enum-type/</loc>
+    <lastmod>2019-08-13T22:05:18+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://handnew04.github.io/post/wil-7%EC%9B%94-3%EC%A3%BC%EC%B0%A8/</loc>
     <lastmod>2019-07-22T23:06:14+09:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -88,7 +95,7 @@
   
   <url>
     <loc>https://handnew04.github.io/</loc>
-    <lastmod>2019-07-22T23:06:14+09:00</lastmod>
+    <lastmod>2019-08-13T22:05:18+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -109,7 +116,7 @@
   
   <url>
     <loc>https://handnew04.github.io/post/</loc>
-    <lastmod>2019-07-22T23:06:14+09:00</lastmod>
+    <lastmod>2019-08-13T22:05:18+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -171,6 +178,13 @@
   </url>
   
   <url>
+    <loc>https://handnew04.github.io/tags/enum/</loc>
+    <lastmod>2019-08-13T22:05:18+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://handnew04.github.io/tags/error/</loc>
     <lastmod>2019-07-22T23:01:20+09:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -192,6 +206,13 @@
   </url>
   
   <url>
+    <loc>https://handnew04.github.io/tags/java/</loc>
+    <lastmod>2019-08-13T22:05:18+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://handnew04.github.io/tags/keydown/</loc>
     <lastmod>2019-07-22T23:01:20+09:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -208,6 +229,13 @@
   <url>
     <loc>https://handnew04.github.io/tags/logcat/</loc>
     <lastmod>2019-07-22T23:06:14+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://handnew04.github.io/tags/singleton/</loc>
+    <lastmod>2019-04-24T13:26:32+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
