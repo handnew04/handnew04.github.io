@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>Android</title>
+      <link>https://handnew04.github.io/tags/android/</link>
+      <pubDate>Mon, 23 Dec 2019 23:01:36 +0900</pubDate>
+      
+      <guid>https://handnew04.github.io/tags/android/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>DesignPattern</title>
       <link>https://handnew04.github.io/tags/designpattern/</link>
       <pubDate>Wed, 24 Apr 2019 13:26:32 +0900</pubDate>
@@ -66,6 +75,15 @@
     </item>
     
     <item>
+      <title>Realm</title>
+      <link>https://handnew04.github.io/tags/realm/</link>
+      <pubDate>Mon, 23 Dec 2019 23:01:36 +0900</pubDate>
+      
+      <guid>https://handnew04.github.io/tags/realm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>SQL</title>
       <link>https://handnew04.github.io/tags/sql/</link>
       <pubDate>Tue, 13 Aug 2019 22:10:43 +0900</pubDate>
@@ -80,24 +98,6 @@
       <pubDate>Wed, 24 Apr 2019 13:26:32 +0900</pubDate>
       
       <guid>https://handnew04.github.io/tags/singleton/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Strategy</title>
-      <link>https://handnew04.github.io/tags/strategy/</link>
-      <pubDate>Fri, 19 Apr 2019 19:17:56 +0900</pubDate>
-      
-      <guid>https://handnew04.github.io/tags/strategy/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Swagger</title>
-      <link>https://handnew04.github.io/tags/swagger/</link>
-      <pubDate>Tue, 13 Aug 2019 22:10:43 +0900</pubDate>
-      
-      <guid>https://handnew04.github.io/tags/swagger/</guid>
       <description></description>
     </item>
     

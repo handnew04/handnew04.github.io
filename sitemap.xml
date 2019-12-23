@@ -3,6 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://handnew04.github.io/post/realm-realm-%EC%82%AC%EC%9A%A9%EA%B8%B0/</loc>
+    <lastmod>2019-12-23T23:01:36+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://handnew04.github.io/post/wil-7%EC%9B%94-4%EC%A3%BC%EC%B0%A8/</loc>
     <lastmod>2019-08-13T22:10:43+09:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -94,6 +101,13 @@
   </url>
   
   <url>
+    <loc>https://handnew04.github.io/tags/android/</loc>
+    <lastmod>2019-12-23T23:01:36+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://handnew04.github.io/tags/designpattern/</loc>
     <lastmod>2019-04-24T13:26:32+09:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -102,7 +116,7 @@
   
   <url>
     <loc>https://handnew04.github.io/</loc>
-    <lastmod>2019-08-13T22:10:43+09:00</lastmod>
+    <lastmod>2019-12-23T23:01:36+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -130,7 +144,7 @@
   
   <url>
     <loc>https://handnew04.github.io/post/</loc>
-    <lastmod>2019-08-13T22:10:43+09:00</lastmod>
+    <lastmod>2019-12-23T23:01:36+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -138,6 +152,13 @@
   <url>
     <loc>https://handnew04.github.io/tags/r/</loc>
     <lastmod>2019-07-22T23:01:20+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://handnew04.github.io/tags/realm/</loc>
+    <lastmod>2019-12-23T23:01:36+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
