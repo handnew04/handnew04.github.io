@@ -6,9 +6,24 @@
     <description>Recent content on Handnew&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 23 Dec 2019 23:01:36 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 25 Dec 2019 22:35:44 +0900</lastBuildDate>
     
         <atom:link href="https://handnew04.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+    <item>
+      <title>[Android] permission</title>
+      <link>https://handnew04.github.io/post/android-permission/</link>
+      <pubDate>Wed, 25 Dec 2019 22:35:44 +0900</pubDate>
+      
+      <guid>https://handnew04.github.io/post/android-permission/</guid>
+      <description>안드로이드 23 이상에서의 권한 요청
+매니패스트에 선언한 권한목록을 가져올 수 있다.
+String[] 의 형태로 받을 수 있다.
+ try { String[] permissionList = context .getPackageManager() .getPackageInfo(context.getPackageName(), PackageManager.GET_PERMISSIONS) .requestedPermissions; } catch (PackageManager.NameNotFoundException e) { //throw new RuntimeException (&amp;quot;Exception&amp;quot;, e); }  권한 목록중 허가되지 않은 권한을 확인하고
+public static String[] checkPermissions(Context context, String[] permissionList) { ArrayList&amp;lt;String&amp;gt; requestList = new ArrayList&amp;lt;&amp;gt;(); for (String aPermission : permissionList) { int permissionCheck = ContextCompat.checkSelfPermission(context, aPermission); if (permissionCheck == PackageManager.</description>
+    </item>
     
     
     
@@ -127,17 +142,6 @@ package Singleton; public class SystemSpeaker { static private SystemSpeaker ins
   코드에서도 마찬가지로 사용처에 맞게 변환을 해주는 역할을 한다.
 Math 라는 클래스가 있고 메서드는 double로 값을 받고 리턴값도 double 로 내보낸다.
 public class Math { public static double twoTime(double num) { return num * 2; } public static double half(double num) { return num / 2; } }  adapter 인터페이스</description>
-    </item>
-    
-    
-    
-    <item>
-      <title>[디자인패턴] Strategy Pattern</title>
-      <link>https://handnew04.github.io/post/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4-strategy-pattern/</link>
-      <pubDate>Fri, 19 Apr 2019 19:17:56 +0900</pubDate>
-      
-      <guid>https://handnew04.github.io/post/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4-strategy-pattern/</guid>
-      <description>인터페이스 델리게이트 스트래티지 패턴   인터페이스  두 객체간의 연결을 해주는 장치 기능에 대한 선언과 구현의 분리 기능을 사용하는 통로  public interface Ainterface { //기능의 선언 public void funcA(); }  public class Aclass implements Ainterface { @Override public void funcA() { //기능의 구현 System.out.println(&amp;quot;AAA&amp;quot;); } }  public class Main { public static void main(String[] args){ Ainterface ainterface = new Aclass(); //a인터페이스를 사용할 수 있는 통로 ainterface.</description>
     </item>
     
     
