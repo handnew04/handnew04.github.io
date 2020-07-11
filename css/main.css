@@ -130,7 +130,7 @@ blockquote {
 .content {
   display: block;
   min-height: calc(100vh - 60px);
-  max-width: 700px;
+  max-width: 800px;
   margin: 60px auto 80px;
   padding: 0 15px;
   font-size: 16px;
