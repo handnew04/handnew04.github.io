@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+  
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.54.0" />
+
+
+<title>[Study] StudyFork 2주 차 기록 - Handnew&#39;s blog</title>
+<meta property="og:title" content="[Study] StudyFork 2주 차 기록 - Handnew&#39;s blog">
+<meta property="og:type" content="article">
+<meta property="description" content="Recyclerview
+onClick set 은 create 에서 (viewHolder 에서)
+viewholder 내부에서 bind 시 데이터타입 받을 때 동작할 함수를 생성해서
+url 의 변경만 bind 에서
+인터페이스 방법은 &lsquo;리스너 패턴&rsquo;
+데이터 모델 m 데이터를 v view에 p(vm….) 어떻게 뿌릴 건가
+DataSource - Remote, Local view - in, out 의 입력받고 보여주는 일을 하는데 Activity 에서 retrofit 을 쓰면서 커짐
+ex)
+class NaverRemoteDataSource { val naverApiService fun queryMovie(query : String, 콜백받을 오브젝트??) { naverApi.">
+<meta property="og:url" content="https://handnew04.github.io/post/study-studyfork-2%EC%A3%BC-%EC%B0%A8-%EA%B8%B0%EB%A1%9D/" >
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://handnew04.github.io/css/main.css" media="all">
+<link rel="stylesheet" href="https://handnew04.github.io/css/fonts.css">
+<link rel="icon" type="image/png" sizes="32x32" href="https://handnew04.github.io/images/favicon-32x32.png">
+<link rel="stylesheet" href="https://handnew04.github.io/css/rainbow.css">
+<script src="https://handnew04.github.io/css/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="https://handnew04.github.io/" class="nav-logo">
+    <img src="https://handnew04.github.io/images/logo.png" 
+         width="50" 
+         height="50" 
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/tags">Tags</a></li>
+    
+    <li><a href="/search">Search</a></li>
+    
+  </ul>
+
+</nav>
+
+        
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-137481057-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+      </header>
+      
+
+
+<main class="content" role="main">
+  <article class="article">
+    <h1 class="article-title">[Study] StudyFork 2주 차 기록</h1>
+    
+    <span class="article-date">2020-07-15</span>
+    
+
+    <div class="article-content">
+      
+
+<p><strong>Recyclerview</strong><br />
+onClick set 은 create 에서 (viewHolder 에서)<br />
+viewholder 내부에서 bind 시 데이터타입 받을 때 동작할 함수를 생성해서<br />
+url 의 변경만 bind 에서<br />
+인터페이스 방법은 &lsquo;리스너 패턴&rsquo;</p>
+
+<h2 id="데이터-모델">데이터 모델</h2>
+
+<p>m 데이터를 v view에 p(vm….) 어떻게 뿌릴 건가</p>
+
+<h3 id="datasource-remote-local">DataSource - Remote, Local</h3>
+
+<p>view - in, out 의 입력받고 보여주는 일을 하는데 Activity 에서 retrofit 을 쓰면서 커짐</p>
+
+<p>ex)</p>
+
+<pre><code>class NaverRemoteDataSource { 
+    val naverApiService
+    fun queryMovie(query : String, 콜백받을 오브젝트??) {
+    naverApi.searchMovie(query)) //retrofitService 의 return 값 Call&lt;T&gt;
+            .enque(
+            fun success(){}
+            fun fail(){}
+        )
+    }
+}
+</code></pre>
+
+<p>Call : retrofit Class<br />
+Callback</p>
+
+<h4 id="repository">Repository</h4>
+
+<ul>
+<li>data를 Remote 에서 가져올지 Local 에서 가져올지 결정</li>
+<li>어떻게 저장하고 보여줄건지 결정</li>
+<li>local 데이터를 먼저 뿌릴지 말지 결정, 업데이트가 필요시 remote 에 요청</li>
+<li>Activity -&gt; Repository -&gt; Remote/Local DataSource</li>
+<li>Remote Data -&gt; local 저장 (Local DataSource 에 보냄, LocalDataSource 에서 저장처리)-&gt; activity 보여줌</li>
+</ul>
+
+<p><strong>data pakage ex</strong><br />
+data.repository<br />
+data.source.remote<br />
+data.source.local</p>
+
+<p>MovieRemoteDataResource<br />
+MovieRemoteDataResourceImpl</p>
+
+<p><strong>etc</strong><br />
+kotlin high order fun<br />
+tools -&gt; kotlin -&gt; byteCode -&gt; Decompile 자바로 돌아가는 모습 확인 가능<br />
+findViewbyId 대신 data Binding</p>
+
+<hr />
+
+<p><em>2019.12 ~ 2020.02 까지의 스터디 기록</em></p>
+
+    </div>
+ 
+    <ul class="article-taxonomy">
+        <hr>
+      
+    
+      
+      <li>
+        <i class="fa fa-tags"></i><a href="/tags/study">Study</a><a href="/tags/android">Android</a>
+      </li>
+      
+  </article>
+
+</main>
+
+<script src="https://utteranc.es/client.js"
+        repo="handnew04/blog-comments"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="https://handnew04.github.io/index.xml" type="application/rss+xml" target="_blank"><i class="fa fa-rss"></i> RSS feed</a>
+          </li>
+          <li>
+            <a href="https://github.com/handnew04"><i class="fa fa-github"></i> Github</a>
+          </li>
+          
+        </ul>
+      </footer>
+
+    </div>
+
+  </body>
+</html>
+

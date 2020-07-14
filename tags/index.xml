@@ -23,7 +23,7 @@
     <item>
       <title>Android</title>
       <link>https://handnew04.github.io/tags/android/</link>
-      <pubDate>Sun, 12 Jul 2020 01:22:44 +0900</pubDate>
+      <pubDate>Wed, 15 Jul 2020 00:35:40 +0900</pubDate>
       
       <guid>https://handnew04.github.io/tags/android/</guid>
       <description></description>
@@ -35,6 +35,15 @@
       <pubDate>Sun, 12 Jul 2020 01:22:44 +0900</pubDate>
       
       <guid>https://handnew04.github.io/tags/aws/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DataBinding</title>
+      <link>https://handnew04.github.io/tags/databinding/</link>
+      <pubDate>Wed, 15 Jul 2020 00:30:10 +0900</pubDate>
+      
+      <guid>https://handnew04.github.io/tags/databinding/</guid>
       <description></description>
     </item>
     
@@ -66,6 +75,15 @@
     </item>
     
     <item>
+      <title>LiveData</title>
+      <link>https://handnew04.github.io/tags/livedata/</link>
+      <pubDate>Wed, 15 Jul 2020 00:35:28 +0900</pubDate>
+      
+      <guid>https://handnew04.github.io/tags/livedata/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>LocalBroadcastManager</title>
       <link>https://handnew04.github.io/tags/localbroadcastmanager/</link>
       <pubDate>Tue, 13 Aug 2019 22:10:43 +0900</pubDate>
@@ -75,29 +93,11 @@
     </item>
     
     <item>
-      <title>R</title>
-      <link>https://handnew04.github.io/tags/r/</link>
-      <pubDate>Mon, 22 Jul 2019 23:01:20 +0900</pubDate>
+      <title>MVP</title>
+      <link>https://handnew04.github.io/tags/mvp/</link>
+      <pubDate>Wed, 15 Jul 2020 00:29:58 +0900</pubDate>
       
-      <guid>https://handnew04.github.io/tags/r/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Realm</title>
-      <link>https://handnew04.github.io/tags/realm/</link>
-      <pubDate>Mon, 23 Dec 2019 23:01:36 +0900</pubDate>
-      
-      <guid>https://handnew04.github.io/tags/realm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>S3</title>
-      <link>https://handnew04.github.io/tags/s3/</link>
-      <pubDate>Sun, 12 Jul 2020 01:22:44 +0900</pubDate>
-      
-      <guid>https://handnew04.github.io/tags/s3/</guid>
+      <guid>https://handnew04.github.io/tags/mvp/</guid>
       <description></description>
     </item>
     

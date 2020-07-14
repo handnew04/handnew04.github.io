@@ -6,10 +6,96 @@
     <description>Recent content in android on Handnew&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 12 Jul 2020 01:22:44 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 15 Jul 2020 00:35:40 +0900</lastBuildDate>
     
 	<atom:link href="https://handnew04.github.io/tags/android/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[Study] StudyFork 7주 차 기록</title>
+      <link>https://handnew04.github.io/post/study-studyfork-7%EC%A3%BC-%EC%B0%A8-%EA%B8%B0%EB%A1%9D/</link>
+      <pubDate>Wed, 15 Jul 2020 00:35:40 +0900</pubDate>
+      
+      <guid>https://handnew04.github.io/post/study-studyfork-7%EC%A3%BC-%EC%B0%A8-%EA%B8%B0%EB%A1%9D/</guid>
+      <description>DI  Dependency Injection 의존을 밖에서 주입해주자. DI PPT 참고 벤다이어그램 연관 관계 참고 (외부에서 변수를 넣는지 내부 생성자에서 인스턴스화 하는지 등, 내부 생성시 객체 고정으로 변경 불가) -&amp;gt; DI 는 집약관계를 이용
+ @provides : 객체를 제공
+ @Module : 객체가 모여있는 곳
+ @Inject : 주입하겠다.
+  Dagger : 컴파일시 Providing Dependencies (관계 그래프)확인
+Koin : 런타임시 - 확인 (에러 날 가능성 있음)
+Koin Reference https://start.insert-koin.io/#/quickstart/kotlin</description>
+    </item>
+    
+    <item>
+      <title>[Study] StudyFork 6주 차 기록</title>
+      <link>https://handnew04.github.io/post/study-studyfork-6%EC%A3%BC-%EC%B0%A8-%EA%B8%B0%EB%A1%9D/</link>
+      <pubDate>Wed, 15 Jul 2020 00:35:28 +0900</pubDate>
+      
+      <guid>https://handnew04.github.io/post/study-studyfork-6%EC%A3%BC-%EC%B0%A8-%EA%B8%B0%EB%A1%9D/</guid>
+      <description>ViewModel https://developer.android.com/topic/libraries/architecture/viewmodel?hl=en
+ ViewModel 은 rotate 시 destory 된 액티비티의 컨텍스트를 계속 가지고 있어서 컨텍스트를 사용할 시 액티비티 컨텍스트가 아닌 Application Context 를 사용 할 것 ViewModelStoreOwner : 내가 만든걸 저장시키고 가지고 옮 Map 으로 관리하여 Owner 에 따라 같은 Owner 를 넣을 경우 같은 viewModel 객체를 가질 수 있음. -&amp;gt; Observe 한 객체의 내용 바로반영 가능 Activity 와 Fragment 일 경우 Owner 를 각각 Activity , Fragment 로 주면 다른 ViewModel 객체를 가지게 됨  LiveData  onPause onStop 시 데이터를 배출하지 않음 onStart , onResume 으로 돌아가면 배출 (active 한 상태에서만 데이터를 배출) binding 된 viewmodel 에도 lifeCycleOwner 를 넣어주어야 함.</description>
+    </item>
+    
+    <item>
+      <title>[Study] StudyFork 5주 차 기록</title>
+      <link>https://handnew04.github.io/post/study-studyfork-5%EC%A3%BC-%EC%B0%A8-%EA%B8%B0%EB%A1%9D/</link>
+      <pubDate>Wed, 15 Jul 2020 00:35:18 +0900</pubDate>
+      
+      <guid>https://handnew04.github.io/post/study-studyfork-5%EC%A3%BC-%EC%B0%A8-%EA%B8%B0%EB%A1%9D/</guid>
+      <description>pagination endlessScrollListener
+쓰레쉬 홀더 ? 를 조정 -&amp;gt; 5 면 5개 남았을 때 재로딩
+옵저버 패턴  유튜버 -&amp;gt; Youtube -&amp;gt; 구독자들 VM이 옵저버 객체에게 데이터를 바꿔서 넣어주면 옵저버 객체를 보고있던 V 들에게 바뀐 데이터를 알게 해줌 V가 옵저버 객체를 옵저빙 하고 있다. One Way 일 경우 immutable , Two Way 일 경우 mmutable (밖에서 넣어야 하니까)  Two way Binding 주의 사항 vm 에서 editText 로 알려줄때 old 와 new 가 다를 때만 알려주어야 함 (setText의 기존의 함수를 오버라이딩 할 때 기존의 setText 의 내용을 함께 사용 해야 한다.</description>
+    </item>
+    
+    <item>
+      <title>[Study] StudyFork 4주 차 기록</title>
+      <link>https://handnew04.github.io/post/study-studyfork-4%EC%A3%BC-%EC%B0%A8-%EA%B8%B0%EB%A1%9D/</link>
+      <pubDate>Wed, 15 Jul 2020 00:30:10 +0900</pubDate>
+      
+      <guid>https://handnew04.github.io/post/study-studyfork-4%EC%A3%BC-%EC%B0%A8-%EA%B8%B0%EB%A1%9D/</guid>
+      <description>https://developer.android.com/topic/libraries/data-binding/generated-binding https://developer.android.com/topic/libraries/data-binding/expressions
+two way binding 객체와 view 서로 주고 받은 바인딩 @={} : two way @{} : one way 로 구분 예를 들어 EditText 의 내용을 객체로 바로 보내서 바로 TextView 로 보여줄 수 있음 set 은 int 로 get은 string 의 경우에도 사용
+BR R 처럼 Binding Resource 인것.. xml 의 data 에 선언하면 BR에 등록 되는데 BR.name 으로 사용 가능 아래의 두 코드가 같은 의미
+ binding.name = &amp;ldquo;&amp;rdquo;</description>
+    </item>
+    
+    <item>
+      <title>[Study] StudyFork 3주 차 기록</title>
+      <link>https://handnew04.github.io/post/study-studyfork-3%EC%A3%BC-%EC%B0%A8-%EA%B8%B0%EB%A1%9D/</link>
+      <pubDate>Wed, 15 Jul 2020 00:29:58 +0900</pubDate>
+      
+      <guid>https://handnew04.github.io/post/study-studyfork-3%EC%A3%BC-%EC%B0%A8-%EA%B8%B0%EB%A1%9D/</guid>
+      <description>MVP  view 는 항상 in/out 만 할 것 in/out 외 다른 작업들은 모두 presenter 가 처리 presenter 가 M(model) 과 작업 view에는 각각의 함수만 존재 (성공, 아이디없음, 등) presenter 에서 분기를 가지고 해당 분기에 대한 view 함수만 호출 (view 에는 분기가 없음)  presenter 에서 성공시 -&amp;gt; view 의 성공함수 호출 presenter 에서 아이디 없음 -&amp;gt; view의 아이디없음 함수 호출  view 와 presenter 가 서로를 알고 있음 (1:1 대응, 액티비티/프래그먼트 하나당 presenter 하나 생성)  추가 :: presenter 가 생성자의 인자값으로 view를 가지고, view에서 presenter 객체를 생성하면서 view.</description>
+    </item>
+    
+    <item>
+      <title>[Study] StudyFork 2주 차 기록</title>
+      <link>https://handnew04.github.io/post/study-studyfork-2%EC%A3%BC-%EC%B0%A8-%EA%B8%B0%EB%A1%9D/</link>
+      <pubDate>Wed, 15 Jul 2020 00:29:39 +0900</pubDate>
+      
+      <guid>https://handnew04.github.io/post/study-studyfork-2%EC%A3%BC-%EC%B0%A8-%EA%B8%B0%EB%A1%9D/</guid>
+      <description>Recyclerview
+onClick set 은 create 에서 (viewHolder 에서)
+viewholder 내부에서 bind 시 데이터타입 받을 때 동작할 함수를 생성해서
+url 의 변경만 bind 에서
+인터페이스 방법은 &amp;lsquo;리스너 패턴&amp;rsquo;
+데이터 모델 m 데이터를 v view에 p(vm….) 어떻게 뿌릴 건가
+DataSource - Remote, Local view - in, out 의 입력받고 보여주는 일을 하는데 Activity 에서 retrofit 을 쓰면서 커짐
+ex)
+class NaverRemoteDataSource { val naverApiService fun queryMovie(query : String, 콜백받을 오브젝트??) { naverApi.</description>
+    </item>
+    
+    <item>
+      <title>[Study] StudyFork 1주 차 기록</title>
+      <link>https://handnew04.github.io/post/study-studyfork-1%EC%A3%BC-%EC%B0%A8-%EA%B8%B0%EB%A1%9D/</link>
+      <pubDate>Wed, 15 Jul 2020 00:23:51 +0900</pubDate>
+      
+      <guid>https://handnew04.github.io/post/study-studyfork-1%EC%A3%BC-%EC%B0%A8-%EA%B8%B0%EB%A1%9D/</guid>
+      <description>토요일에 pr 머지 되야 함
+ HW-n , n = 주차 (1주차 2주차 ..) 코맨트 하나당 커밋 하나 reformat code (ctrl art l) 파일의 changed 를 최대한 줄이기 위함 리포멧 파일 옵션 둘다 체크  code style Kotlin - scheme default IDE 설정 set from 에서 predefined style - kotlin 설정
+code style xml - set from 에서 predefined style - android 설정
+ 작성자 / pr 생성 - review needed.</description>
+    </item>
     
     <item>
       <title>[Android] AWS S3 이미지 업로드</title>

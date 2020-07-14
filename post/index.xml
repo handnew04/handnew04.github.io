@@ -6,10 +6,96 @@
     <description>Recent content in Posts on Handnew&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 12 Jul 2020 01:22:44 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 15 Jul 2020 00:35:40 +0900</lastBuildDate>
     
 	<atom:link href="https://handnew04.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[Study] StudyFork 7주 차 기록</title>
+      <link>https://handnew04.github.io/post/study-studyfork-7%EC%A3%BC-%EC%B0%A8-%EA%B8%B0%EB%A1%9D/</link>
+      <pubDate>Wed, 15 Jul 2020 00:35:40 +0900</pubDate>
+      
+      <guid>https://handnew04.github.io/post/study-studyfork-7%EC%A3%BC-%EC%B0%A8-%EA%B8%B0%EB%A1%9D/</guid>
+      <description>DI  Dependency Injection 의존을 밖에서 주입해주자. DI PPT 참고 벤다이어그램 연관 관계 참고 (외부에서 변수를 넣는지 내부 생성자에서 인스턴스화 하는지 등, 내부 생성시 객체 고정으로 변경 불가) -&amp;gt; DI 는 집약관계를 이용
+ @provides : 객체를 제공
+ @Module : 객체가 모여있는 곳
+ @Inject : 주입하겠다.
+  Dagger : 컴파일시 Providing Dependencies (관계 그래프)확인
+Koin : 런타임시 - 확인 (에러 날 가능성 있음)
+Koin Reference https://start.insert-koin.io/#/quickstart/kotlin</description>
+    </item>
+    
+    <item>
+      <title>[Study] StudyFork 6주 차 기록</title>
+      <link>https://handnew04.github.io/post/study-studyfork-6%EC%A3%BC-%EC%B0%A8-%EA%B8%B0%EB%A1%9D/</link>
+      <pubDate>Wed, 15 Jul 2020 00:35:28 +0900</pubDate>
+      
+      <guid>https://handnew04.github.io/post/study-studyfork-6%EC%A3%BC-%EC%B0%A8-%EA%B8%B0%EB%A1%9D/</guid>
+      <description>ViewModel https://developer.android.com/topic/libraries/architecture/viewmodel?hl=en
+ ViewModel 은 rotate 시 destory 된 액티비티의 컨텍스트를 계속 가지고 있어서 컨텍스트를 사용할 시 액티비티 컨텍스트가 아닌 Application Context 를 사용 할 것 ViewModelStoreOwner : 내가 만든걸 저장시키고 가지고 옮 Map 으로 관리하여 Owner 에 따라 같은 Owner 를 넣을 경우 같은 viewModel 객체를 가질 수 있음. -&amp;gt; Observe 한 객체의 내용 바로반영 가능 Activity 와 Fragment 일 경우 Owner 를 각각 Activity , Fragment 로 주면 다른 ViewModel 객체를 가지게 됨  LiveData  onPause onStop 시 데이터를 배출하지 않음 onStart , onResume 으로 돌아가면 배출 (active 한 상태에서만 데이터를 배출) binding 된 viewmodel 에도 lifeCycleOwner 를 넣어주어야 함.</description>
+    </item>
+    
+    <item>
+      <title>[Study] StudyFork 5주 차 기록</title>
+      <link>https://handnew04.github.io/post/study-studyfork-5%EC%A3%BC-%EC%B0%A8-%EA%B8%B0%EB%A1%9D/</link>
+      <pubDate>Wed, 15 Jul 2020 00:35:18 +0900</pubDate>
+      
+      <guid>https://handnew04.github.io/post/study-studyfork-5%EC%A3%BC-%EC%B0%A8-%EA%B8%B0%EB%A1%9D/</guid>
+      <description>pagination endlessScrollListener
+쓰레쉬 홀더 ? 를 조정 -&amp;gt; 5 면 5개 남았을 때 재로딩
+옵저버 패턴  유튜버 -&amp;gt; Youtube -&amp;gt; 구독자들 VM이 옵저버 객체에게 데이터를 바꿔서 넣어주면 옵저버 객체를 보고있던 V 들에게 바뀐 데이터를 알게 해줌 V가 옵저버 객체를 옵저빙 하고 있다. One Way 일 경우 immutable , Two Way 일 경우 mmutable (밖에서 넣어야 하니까)  Two way Binding 주의 사항 vm 에서 editText 로 알려줄때 old 와 new 가 다를 때만 알려주어야 함 (setText의 기존의 함수를 오버라이딩 할 때 기존의 setText 의 내용을 함께 사용 해야 한다.</description>
+    </item>
+    
+    <item>
+      <title>[Study] StudyFork 4주 차 기록</title>
+      <link>https://handnew04.github.io/post/study-studyfork-4%EC%A3%BC-%EC%B0%A8-%EA%B8%B0%EB%A1%9D/</link>
+      <pubDate>Wed, 15 Jul 2020 00:30:10 +0900</pubDate>
+      
+      <guid>https://handnew04.github.io/post/study-studyfork-4%EC%A3%BC-%EC%B0%A8-%EA%B8%B0%EB%A1%9D/</guid>
+      <description>https://developer.android.com/topic/libraries/data-binding/generated-binding https://developer.android.com/topic/libraries/data-binding/expressions
+two way binding 객체와 view 서로 주고 받은 바인딩 @={} : two way @{} : one way 로 구분 예를 들어 EditText 의 내용을 객체로 바로 보내서 바로 TextView 로 보여줄 수 있음 set 은 int 로 get은 string 의 경우에도 사용
+BR R 처럼 Binding Resource 인것.. xml 의 data 에 선언하면 BR에 등록 되는데 BR.name 으로 사용 가능 아래의 두 코드가 같은 의미
+ binding.name = &amp;ldquo;&amp;rdquo;</description>
+    </item>
+    
+    <item>
+      <title>[Study] StudyFork 3주 차 기록</title>
+      <link>https://handnew04.github.io/post/study-studyfork-3%EC%A3%BC-%EC%B0%A8-%EA%B8%B0%EB%A1%9D/</link>
+      <pubDate>Wed, 15 Jul 2020 00:29:58 +0900</pubDate>
+      
+      <guid>https://handnew04.github.io/post/study-studyfork-3%EC%A3%BC-%EC%B0%A8-%EA%B8%B0%EB%A1%9D/</guid>
+      <description>MVP  view 는 항상 in/out 만 할 것 in/out 외 다른 작업들은 모두 presenter 가 처리 presenter 가 M(model) 과 작업 view에는 각각의 함수만 존재 (성공, 아이디없음, 등) presenter 에서 분기를 가지고 해당 분기에 대한 view 함수만 호출 (view 에는 분기가 없음)  presenter 에서 성공시 -&amp;gt; view 의 성공함수 호출 presenter 에서 아이디 없음 -&amp;gt; view의 아이디없음 함수 호출  view 와 presenter 가 서로를 알고 있음 (1:1 대응, 액티비티/프래그먼트 하나당 presenter 하나 생성)  추가 :: presenter 가 생성자의 인자값으로 view를 가지고, view에서 presenter 객체를 생성하면서 view.</description>
+    </item>
+    
+    <item>
+      <title>[Study] StudyFork 2주 차 기록</title>
+      <link>https://handnew04.github.io/post/study-studyfork-2%EC%A3%BC-%EC%B0%A8-%EA%B8%B0%EB%A1%9D/</link>
+      <pubDate>Wed, 15 Jul 2020 00:29:39 +0900</pubDate>
+      
+      <guid>https://handnew04.github.io/post/study-studyfork-2%EC%A3%BC-%EC%B0%A8-%EA%B8%B0%EB%A1%9D/</guid>
+      <description>Recyclerview
+onClick set 은 create 에서 (viewHolder 에서)
+viewholder 내부에서 bind 시 데이터타입 받을 때 동작할 함수를 생성해서
+url 의 변경만 bind 에서
+인터페이스 방법은 &amp;lsquo;리스너 패턴&amp;rsquo;
+데이터 모델 m 데이터를 v view에 p(vm….) 어떻게 뿌릴 건가
+DataSource - Remote, Local view - in, out 의 입력받고 보여주는 일을 하는데 Activity 에서 retrofit 을 쓰면서 커짐
+ex)
+class NaverRemoteDataSource { val naverApiService fun queryMovie(query : String, 콜백받을 오브젝트??) { naverApi.</description>
+    </item>
+    
+    <item>
+      <title>[Study] StudyFork 1주 차 기록</title>
+      <link>https://handnew04.github.io/post/study-studyfork-1%EC%A3%BC-%EC%B0%A8-%EA%B8%B0%EB%A1%9D/</link>
+      <pubDate>Wed, 15 Jul 2020 00:23:51 +0900</pubDate>
+      
+      <guid>https://handnew04.github.io/post/study-studyfork-1%EC%A3%BC-%EC%B0%A8-%EA%B8%B0%EB%A1%9D/</guid>
+      <description>토요일에 pr 머지 되야 함
+ HW-n , n = 주차 (1주차 2주차 ..) 코맨트 하나당 커밋 하나 reformat code (ctrl art l) 파일의 changed 를 최대한 줄이기 위함 리포멧 파일 옵션 둘다 체크  code style Kotlin - scheme default IDE 설정 set from 에서 predefined style - kotlin 설정
+code style xml - set from 에서 predefined style - android 설정
+ 작성자 / pr 생성 - review needed.</description>
+    </item>
     
     <item>
       <title>[Android] AWS S3 이미지 업로드</title>
@@ -43,84 +129,6 @@
 String[] 의 형태로 받을 수 있다.
  try { String[] permissionList = context .getPackageManager() .getPackageInfo(context.getPackageName(), PackageManager.GET_PERMISSIONS) .requestedPermissions; } catch (PackageManager.NameNotFoundException e) { //throw new RuntimeException (&amp;quot;Exception&amp;quot;, e); }  권한 목록중 허가되지 않은 권한을 확인하고
 public static String[] checkPermissions(Context context, String[] permissionList) { ArrayList&amp;lt;String&amp;gt; requestList = new ArrayList&amp;lt;&amp;gt;(); for (String aPermission : permissionList) { int permissionCheck = ContextCompat.checkSelfPermission(context, aPermission); if (permissionCheck == PackageManager.</description>
-    </item>
-    
-    <item>
-      <title>[Realm] Realm 사용기</title>
-      <link>https://handnew04.github.io/post/realm-realm-%EC%82%AC%EC%9A%A9%EA%B8%B0/</link>
-      <pubDate>Mon, 23 Dec 2019 23:01:36 +0900</pubDate>
-      
-      <guid>https://handnew04.github.io/post/realm-realm-%EC%82%AC%EC%9A%A9%EA%B8%B0/</guid>
-      <description>기존의 SharedPreference + SQLite 로 이루어진 로컬db를 Realm 으로 교체하기 위함  특징  Realm 의 테이블은 java 에서 사용하는 클래스파일로 대체 된다.
-public class Sample extends RealmObject { private String vehicleId; private int vehicleName; }  클래스 내부에 필요한 컬럼을 넣을 수 있고 getter &amp;amp; setter 로 일반 클래스처럼(setter 는 트랜잭션 내에서만 가능) 사용할 수 있다.
-  사용하기  공식문서
- 컬럼마다 업데이트를 하던 기존 데이터베이스와 달리 지정한 PrimaryKey를 비교하여 존재하지 않으면 쓰기를, 존재하면 오브젝트 자체를 업데이트 할 수 있다.</description>
-    </item>
-    
-    <item>
-      <title>[WIL] 7월 4주차</title>
-      <link>https://handnew04.github.io/post/wil-7%EC%9B%94-4%EC%A3%BC%EC%B0%A8/</link>
-      <pubDate>Tue, 13 Aug 2019 22:10:43 +0900</pubDate>
-      
-      <guid>https://handnew04.github.io/post/wil-7%EC%9B%94-4%EC%A3%BC%EC%B0%A8/</guid>
-      <description>SQL safe update mode error  Error Code: 1175. You are using safe update mode and you tried to update a table without a WHERE that uses a KEY column. To disable safe mode, toggle the option in Preferences -&amp;gt; SQL Editor and reconnect. 하나의 레코드만을 update, delete 하도록 설정 된 모드인데 다수의 레코드를 수정하려 할때 에러 발생. 일시적 safe 모드 해제 : set sql_sate_updates=0; 영구적 해제는 워크벤치의 file - preference에서 safe mode 를 해제하면 된다.</description>
-    </item>
-    
-    <item>
-      <title>[JAVA] enum type</title>
-      <link>https://handnew04.github.io/post/java-enum-type/</link>
-      <pubDate>Tue, 13 Aug 2019 22:05:18 +0900</pubDate>
-      
-      <guid>https://handnew04.github.io/post/java-enum-type/</guid>
-      <description>열거 자료형  기존의 java 에서 상수를 사용할 때 아래와 같이 정의한다.
-//과일 public static int F_APPLE = 1; public static int F_MANGO = 2; public static int F_MELON = 3; //의류 public static int C_ZARA = 1; public static int C_MANGO = 2; public static int C_SPAO = 3;  위의 코드에서 2와 비교를 할 때 과일과 의류의 MANGO 는 따로 정의 되어 있지만 비교시에 둘 다 2로써 값이 같다고 여기게 된다.</description>
-    </item>
-    
-    <item>
-      <title>[WIL] 7월 3주차</title>
-      <link>https://handnew04.github.io/post/wil-7%EC%9B%94-3%EC%A3%BC%EC%B0%A8/</link>
-      <pubDate>Mon, 22 Jul 2019 23:06:14 +0900</pubDate>
-      
-      <guid>https://handnew04.github.io/post/wil-7%EC%9B%94-3%EC%A3%BC%EC%B0%A8/</guid>
-      <description>Logcat 색상 설정  안드로이드 스튜디오의 Ffile - Setting-Editor-Color Scheme- Android Logcat 에서 톱니바퀴를 눌러 import 를 하거나 나의 색상을 export 하여 테마를 저장할 수 있다.  프로젝트 전체 폰트 적용 방법  앱에서 기본으로 사용할 폰트의 경우 전체 적용이 필요하다 style.xml 에서 해당 앱의 베이스테마에 fontFamily 태그를 추가하여 사용할 폰트를 기입 다만 적용 되지 않는 다이얼로그 존재가 가능하며 그 부분에 대해선 해당 TextView 의 스타일이나 layout의 xml 파일에서 직접 추가 필요 layout에서 theme 으로 수정한 앱테마를 받고있는지를 확인 -&amp;gt; 받는다면 적용됨  review  for문 안에 for 문이 또 들어가는 등.</description>
-    </item>
-    
-    <item>
-      <title>[WIL] 7월 2주차</title>
-      <link>https://handnew04.github.io/post/wil-7%EC%9B%94-2%EC%A3%BC%EC%B0%A8/</link>
-      <pubDate>Mon, 22 Jul 2019 23:01:20 +0900</pubDate>
-      
-      <guid>https://handnew04.github.io/post/wil-7%EC%9B%94-2%EC%A3%BC%EC%B0%A8/</guid>
-      <description>안드로이드 R 에러  file 의 Invalidate Caches / Restart (캐시를 지우는 것)
-  windowSoftInputMode  키보드가 필요한 액티비티에 사용. 매니패스트의 액티비티 태그에 android:windowSoftInputMode=&amp;ldquo;&amp;rdquo; 로 사용 &amp;rdquo;&amp;rdquo; 에 adjustPan 등을 입력. 종류가 다양함  안드로이드 해상도 별 크기 대응 참고블로그
- dimens.xml의 해상도 설정은 value폴더를 나뉘는 것으로 생성 values-hdpi, values-xdpi 등 필요한 dpi 별 폴더를 res 폴더 아래에 생성하여 해당 폴더안에 dimens라는 이름으로 xml 파일 생성  안드로이드 해상도 별 크기 대응 2  dimens 로 사용 시 같은 xxhdpi 를 사용하지만 화면의 크기가 다른 경우 발생.</description>
-    </item>
-    
-    <item>
-      <title>[WIL] 7월 1주차</title>
-      <link>https://handnew04.github.io/post/wil-7%EC%9B%94-1%EC%A3%BC%EC%B0%A8/</link>
-      <pubDate>Mon, 22 Jul 2019 22:38:06 +0900</pubDate>
-      
-      <guid>https://handnew04.github.io/post/wil-7%EC%9B%94-1%EC%A3%BC%EC%B0%A8/</guid>
-      <description> WeakReference  핸들러를 이너 클래스로 사용 시 메모리 누수* 발생 가능. 그 상황을 방지 하는 역할
- 기존 핸들러 클래스를 static 클래스로 사용
- 핸들러 내부에서 해당 액티비티 타입의 WeakReference 변수를 생성하여 사용
-  Private final WeakReference&amp;lt;StartActivity&amp;gt; mActivity;  메모리 누수
- AsyncTask 가 제 할일을 마친 후, 사용하던 메모리를 다시 main 에게 돌려 주어야 하는데, 그러지 않는 경우
-   AdvertisingIdClient class
- 구글의 플레이 서비스를 사용하는 디바이스의 ad ID를 얻을 수 있음 유저 식별용으로 적합  </description>
-    </item>
-    
-    <item>
-      <title>[디자인패턴] Singleton Pattern</title>
-      <link>https://handnew04.github.io/post/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4-singleton-pattern/</link>
-      <pubDate>Wed, 24 Apr 2019 13:26:32 +0900</pubDate>
-      
-      <guid>https://handnew04.github.io/post/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4-singleton-pattern/</guid>
-      <description>싱글톤 패턴이란 단 하나의 인스턴스만을 사용하는 패턴이다.  예시 스피커의 볼륨을 조절하는 클래스의 인스턴스가 여러개라면 조절 할 때 마다 모든 인스턴스를 조절 해야하는 번거로움이 생긴다.
-그래서 하나의 인스턴스를 사용한다.
-하나의 인스턴스를 사용하기 위해 static으로 선언한다.
-package Singleton; public class SystemSpeaker { static private SystemSpeaker instance; private int volume; private SystemSpeaker() { volume = 5; } public static SystemSpeaker getInstance() { if (instance == null) { //시스템 스피커/ 아직 생성이 되지 않았을때는 생성을 해주고 instance = new SystemSpeaker(); } //instance가 생성되어 있다면 그 인스턴스를 리턴한다.</description>
     </item>
     
   </channel>

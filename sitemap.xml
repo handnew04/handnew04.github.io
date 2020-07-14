@@ -3,6 +3,55 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://handnew04.github.io/post/study-studyfork-7%EC%A3%BC-%EC%B0%A8-%EA%B8%B0%EB%A1%9D/</loc>
+    <lastmod>2020-07-15T00:35:40+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://handnew04.github.io/post/study-studyfork-6%EC%A3%BC-%EC%B0%A8-%EA%B8%B0%EB%A1%9D/</loc>
+    <lastmod>2020-07-15T00:35:28+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://handnew04.github.io/post/study-studyfork-5%EC%A3%BC-%EC%B0%A8-%EA%B8%B0%EB%A1%9D/</loc>
+    <lastmod>2020-07-15T00:35:18+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://handnew04.github.io/post/study-studyfork-4%EC%A3%BC-%EC%B0%A8-%EA%B8%B0%EB%A1%9D/</loc>
+    <lastmod>2020-07-15T00:30:10+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://handnew04.github.io/post/study-studyfork-3%EC%A3%BC-%EC%B0%A8-%EA%B8%B0%EB%A1%9D/</loc>
+    <lastmod>2020-07-15T00:29:58+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://handnew04.github.io/post/study-studyfork-2%EC%A3%BC-%EC%B0%A8-%EA%B8%B0%EB%A1%9D/</loc>
+    <lastmod>2020-07-15T00:29:39+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://handnew04.github.io/post/study-studyfork-1%EC%A3%BC-%EC%B0%A8-%EA%B8%B0%EB%A1%9D/</loc>
+    <lastmod>2020-07-15T00:23:51+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://handnew04.github.io/post/android-aws-s3-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%97%85%EB%A1%9C%EB%93%9C/</loc>
     <lastmod>2020-07-12T01:22:44+09:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -123,7 +172,7 @@
   
   <url>
     <loc>https://handnew04.github.io/tags/android/</loc>
-    <lastmod>2020-07-12T01:22:44+09:00</lastmod>
+    <lastmod>2020-07-15T00:35:40+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -131,6 +180,13 @@
   <url>
     <loc>https://handnew04.github.io/tags/aws/</loc>
     <lastmod>2020-07-12T01:22:44+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://handnew04.github.io/tags/databinding/</loc>
+    <lastmod>2020-07-15T00:30:10+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -144,7 +200,7 @@
   
   <url>
     <loc>https://handnew04.github.io/</loc>
-    <lastmod>2020-07-12T01:22:44+09:00</lastmod>
+    <lastmod>2020-07-15T00:35:40+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -164,6 +220,13 @@
   </url>
   
   <url>
+    <loc>https://handnew04.github.io/tags/livedata/</loc>
+    <lastmod>2020-07-15T00:35:28+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://handnew04.github.io/tags/localbroadcastmanager/</loc>
     <lastmod>2019-08-13T22:10:43+09:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -171,8 +234,29 @@
   </url>
   
   <url>
+    <loc>https://handnew04.github.io/tags/mvp/</loc>
+    <lastmod>2020-07-15T00:29:58+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://handnew04.github.io/tags/mvvm/</loc>
+    <lastmod>2020-07-15T00:35:18+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://handnew04.github.io/tags/observer/</loc>
+    <lastmod>2020-07-15T00:35:18+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://handnew04.github.io/post/</loc>
-    <lastmod>2020-07-12T01:22:44+09:00</lastmod>
+    <lastmod>2020-07-15T00:35:40+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -220,6 +304,13 @@
   </url>
   
   <url>
+    <loc>https://handnew04.github.io/tags/study/</loc>
+    <lastmod>2020-07-15T00:35:40+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://handnew04.github.io/tags/swagger/</loc>
     <lastmod>2019-08-13T22:10:43+09:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -241,6 +332,20 @@
   </url>
   
   <url>
+    <loc>https://handnew04.github.io/tags/tips/</loc>
+    <lastmod>2020-07-15T00:35:28+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://handnew04.github.io/tags/viewmodel/</loc>
+    <lastmod>2020-07-15T00:35:28+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://handnew04.github.io/tags/wil/</loc>
     <lastmod>2019-08-13T22:10:43+09:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -256,7 +361,7 @@
   
   <url>
     <loc>https://handnew04.github.io/tags/android/</loc>
-    <lastmod>2020-07-12T01:22:44+09:00</lastmod>
+    <lastmod>2020-07-15T00:35:40+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -277,7 +382,7 @@
   
   <url>
     <loc>https://handnew04.github.io/tags/codestyle/</loc>
-    <lastmod>2019-08-13T22:10:43+09:00</lastmod>
+    <lastmod>2020-07-15T00:23:51+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>

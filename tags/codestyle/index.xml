@@ -6,10 +6,22 @@
     <description>Recent content in codeStyle on Handnew&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Tue, 13 Aug 2019 22:10:43 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 15 Jul 2020 00:23:51 +0900</lastBuildDate>
     
 	<atom:link href="https://handnew04.github.io/tags/codestyle/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[Study] StudyFork 1주 차 기록</title>
+      <link>https://handnew04.github.io/post/study-studyfork-1%EC%A3%BC-%EC%B0%A8-%EA%B8%B0%EB%A1%9D/</link>
+      <pubDate>Wed, 15 Jul 2020 00:23:51 +0900</pubDate>
+      
+      <guid>https://handnew04.github.io/post/study-studyfork-1%EC%A3%BC-%EC%B0%A8-%EA%B8%B0%EB%A1%9D/</guid>
+      <description>토요일에 pr 머지 되야 함
+ HW-n , n = 주차 (1주차 2주차 ..) 코맨트 하나당 커밋 하나 reformat code (ctrl art l) 파일의 changed 를 최대한 줄이기 위함 리포멧 파일 옵션 둘다 체크  code style Kotlin - scheme default IDE 설정 set from 에서 predefined style - kotlin 설정
+code style xml - set from 에서 predefined style - android 설정
+ 작성자 / pr 생성 - review needed.</description>
+    </item>
     
     <item>
       <title>[WIL] 7월 4주차</title>
