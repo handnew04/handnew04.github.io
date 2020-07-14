@@ -183,7 +183,7 @@ blockquote {
 }
 
 .article-content h1 {
-  font-size: 2.0em;
+  font-size: 1.8em;
   font-family: 'Nanum-Gothic', 'Lato', sans-serif;
   margin-block-end: 0.5em;
 }
@@ -193,11 +193,11 @@ blockquote {
 }
 
 .article-content h2 {
-  font-size: 1.8em;
+  font-size: 1.6em;
 }
 
 .article-content h3 {
-  font-size: 1.5em;
+  font-size: 1.35em;
 }
 
 .article-content h4 {
