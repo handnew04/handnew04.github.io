@@ -3,6 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://handnew04.github.io/post/android-%EC%8A%A4%ED%94%BC%EB%84%88-spinner/</loc>
+    <lastmod>2020-07-26T17:50:32+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://handnew04.github.io/post/study-studyfork-7%EC%A3%BC-%EC%B0%A8-%EA%B8%B0%EB%A1%9D/</loc>
     <lastmod>2020-07-15T00:35:40+09:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -172,7 +179,7 @@
   
   <url>
     <loc>https://handnew04.github.io/tags/android/</loc>
-    <lastmod>2020-07-15T00:35:40+09:00</lastmod>
+    <lastmod>2020-07-26T17:50:32+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -200,7 +207,7 @@
   
   <url>
     <loc>https://handnew04.github.io/</loc>
-    <lastmod>2020-07-15T00:35:40+09:00</lastmod>
+    <lastmod>2020-07-26T17:50:32+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -256,7 +263,7 @@
   
   <url>
     <loc>https://handnew04.github.io/post/</loc>
-    <lastmod>2020-07-15T00:35:40+09:00</lastmod>
+    <lastmod>2020-07-26T17:50:32+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -292,6 +299,13 @@
   <url>
     <loc>https://handnew04.github.io/tags/singleton/</loc>
     <lastmod>2019-04-24T13:26:32+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://handnew04.github.io/tags/spinner/</loc>
+    <lastmod>2020-07-26T17:50:32+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -361,7 +375,7 @@
   
   <url>
     <loc>https://handnew04.github.io/tags/android/</loc>
-    <lastmod>2020-07-15T00:35:40+09:00</lastmod>
+    <lastmod>2020-07-26T17:50:32+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>

@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Handnew&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Wed, 15 Jul 2020 00:35:40 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 26 Jul 2020 17:50:32 +0900</lastBuildDate>
     
 	<atom:link href="https://handnew04.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[Android] 스피너 (Spinner)</title>
+      <link>https://handnew04.github.io/post/android-%EC%8A%A4%ED%94%BC%EB%84%88-spinner/</link>
+      <pubDate>Sun, 26 Jul 2020 17:50:32 +0900</pubDate>
+      
+      <guid>https://handnew04.github.io/post/android-%EC%8A%A4%ED%94%BC%EB%84%88-spinner/</guid>
+      <description>동적 스피너 ArrayAdapter 의 context 자리에 activity 는 가능하나 fragment에서 사용할 경우 getActivity 를 가져와야 함
+ private void initSpinner() { List&amp;lt;String&amp;gt; years = getYears(); ArrayAdapter&amp;lt;String&amp;gt; adapter = new ArrayAdapter&amp;lt;&amp;gt;(this, android.R.layout.simple_spinner_dropdown_item, years); adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item); yearsSpinner.setAdapter(mModelYearsAdapter); } private List&amp;lt;String&amp;gt; getYears() { int currentYear = Calendar.getInstance().get(Calendar.YEAR); int minYear = 2000; List&amp;lt;String&amp;gt; years = new ArrayList&amp;lt;&amp;gt;(); while (currentYear &amp;gt;= minModelYear) { years.add(String.valueOf(currentYear)); currentYear--; } return years; }  커스텀 스피너 레이아웃 (스피너의 디자인을 통일 할 때 (본인이 원하는 형태의 디자인) layouy/spinner_xxx.</description>
+    </item>
     
     <item>
       <title>[Study] StudyFork 7주 차 기록</title>
@@ -116,19 +126,6 @@ code style xml - set from 에서 predefined style - android 설정
       <guid>https://handnew04.github.io/post/android-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0-%EC%B4%AC%EC%98%81-%EB%82%B4%EB%B6%80%EC%A0%80%EC%9E%A5%EC%86%8C-%EC%9E%90%EB%A5%B4%EA%B8%B0/</guid>
       <description>지정된 비율로 리사이즈 크롭 return-data 를 이용 하여 intent 로 크롭된 이미지가 넘어오도록 함
  @Override protected void onActivityResult(int requestCode, int resultCode, Intent data) { super.onActivityResult(requestCode, resultCode, data); if (resultCode != RESULT_OK) return; switch (requestCode) { case PICK_FROM_ALBUM: Uri photoUri = data.getData(); cropImage(photoUri); break; case PICK_FROM_CAMERA: break; case CROP_FROM_IMAGE: Bundle bundle = data.getExtras(); assert bundle != null; Bitmap test = bundle.getParcelable(&amp;quot;data&amp;quot;); break; } } private void cropImage(Uri imageUri) { Intent intent= getCropIntent(imageUri); startActivityForResult(intent, CROP_FROM_IMAGE); } private Intent getCropIntent(Uri inputUri) { Intent intent = new Intent(&amp;quot;com.</description>
-    </item>
-    
-    <item>
-      <title>[Android] permission</title>
-      <link>https://handnew04.github.io/post/android-permission/</link>
-      <pubDate>Wed, 25 Dec 2019 22:35:44 +0900</pubDate>
-      
-      <guid>https://handnew04.github.io/post/android-permission/</guid>
-      <description>안드로이드 23 이상에서의 권한 요청
-매니패스트에 선언한 권한목록을 가져올 수 있다.
-String[] 의 형태로 받을 수 있다.
- try { String[] permissionList = context .getPackageManager() .getPackageInfo(context.getPackageName(), PackageManager.GET_PERMISSIONS) .requestedPermissions; } catch (PackageManager.NameNotFoundException e) { //throw new RuntimeException (&amp;quot;Exception&amp;quot;, e); }  권한 목록중 허가되지 않은 권한을 확인하고
-public static String[] checkPermissions(Context context, String[] permissionList) { ArrayList&amp;lt;String&amp;gt; requestList = new ArrayList&amp;lt;&amp;gt;(); for (String aPermission : permissionList) { int permissionCheck = ContextCompat.checkSelfPermission(context, aPermission); if (permissionCheck == PackageManager.</description>
     </item>
     
   </channel>
