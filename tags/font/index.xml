@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>font on Handnew&#39;s blog</title>
@@ -6,18 +6,14 @@
     <description>Recent content in font on Handnew&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 22 Jul 2019 23:06:14 +0900</lastBuildDate>
-    
-	<atom:link href="https://handnew04.github.io/tags/font/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 22 Jul 2019 23:06:14 +0900</lastBuildDate><atom:link href="https://handnew04.github.io/tags/font/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[WIL] 7월 3주차</title>
-      <link>https://handnew04.github.io/post/wil-7%EC%9B%94-3%EC%A3%BC%EC%B0%A8/</link>
+      <link>https://handnew04.github.io/posts/weekly_i_learn07_3/</link>
       <pubDate>Mon, 22 Jul 2019 23:06:14 +0900</pubDate>
       
-      <guid>https://handnew04.github.io/post/wil-7%EC%9B%94-3%EC%A3%BC%EC%B0%A8/</guid>
-      <description>Logcat 색상 설정  안드로이드 스튜디오의 Ffile - Setting-Editor-Color Scheme- Android Logcat 에서 톱니바퀴를 눌러 import 를 하거나 나의 색상을 export 하여 테마를 저장할 수 있다.  프로젝트 전체 폰트 적용 방법  앱에서 기본으로 사용할 폰트의 경우 전체 적용이 필요하다 style.xml 에서 해당 앱의 베이스테마에 fontFamily 태그를 추가하여 사용할 폰트를 기입 다만 적용 되지 않는 다이얼로그 존재가 가능하며 그 부분에 대해선 해당 TextView 의 스타일이나 layout의 xml 파일에서 직접 추가 필요 layout에서 theme 으로 수정한 앱테마를 받고있는지를 확인 -&amp;gt; 받는다면 적용됨  review  for문 안에 for 문이 또 들어가는 등.</description>
+      <guid>https://handnew04.github.io/posts/weekly_i_learn07_3/</guid>
+      <description>Logcat 색상 설정 안드로이드 스튜디오의 Ffile - Setting-Editor-Color Scheme- Android Logcat 에서 톱니바퀴를 눌러 import 를 하거나 나의 색상을 export 하여 테마를 저장할 수 있다. 프로젝트 전체 폰트 적용 방법 앱에서 기본</description>
     </item>
     
   </channel>

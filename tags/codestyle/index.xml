@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>codeStyle on Handnew&#39;s blog</title>
@@ -6,30 +6,23 @@
     <description>Recent content in codeStyle on Handnew&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Wed, 15 Jul 2020 00:23:51 +0900</lastBuildDate>
-    
-	<atom:link href="https://handnew04.github.io/tags/codestyle/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 15 Jul 2020 00:23:51 +0900</lastBuildDate><atom:link href="https://handnew04.github.io/tags/codestyle/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[Study] StudyFork 1주 차 기록</title>
-      <link>https://handnew04.github.io/post/study-studyfork-1%EC%A3%BC-%EC%B0%A8-%EA%B8%B0%EB%A1%9D/</link>
+      <link>https://handnew04.github.io/posts/studyfork_1_week/</link>
       <pubDate>Wed, 15 Jul 2020 00:23:51 +0900</pubDate>
       
-      <guid>https://handnew04.github.io/post/study-studyfork-1%EC%A3%BC-%EC%B0%A8-%EA%B8%B0%EB%A1%9D/</guid>
-      <description>토요일에 pr 머지 되야 함
- HW-n , n = 주차 (1주차 2주차 ..) 코맨트 하나당 커밋 하나 reformat code (ctrl art l) 파일의 changed 를 최대한 줄이기 위함 리포멧 파일 옵션 둘다 체크  code style Kotlin - scheme default IDE 설정 set from 에서 predefined style - kotlin 설정
-code style xml - set from 에서 predefined style - android 설정
- 작성자 / pr 생성 - review needed.</description>
+      <guid>https://handnew04.github.io/posts/studyfork_1_week/</guid>
+      <description>토요일에 pr 머지 되야 함 HW-n , n = 주차 (1주차 2주차 ..) 코맨트 하나당 커밋 하나 reformat code (ctrl art l) 파일의 changed 를 최대한 줄이기 위함 리포멧 파일 옵션 둘다 체크 code style Kotlin - scheme default IDE</description>
     </item>
     
     <item>
       <title>[WIL] 7월 4주차</title>
-      <link>https://handnew04.github.io/post/wil-7%EC%9B%94-4%EC%A3%BC%EC%B0%A8/</link>
+      <link>https://handnew04.github.io/posts/weekly_i_learn07_4/</link>
       <pubDate>Tue, 13 Aug 2019 22:10:43 +0900</pubDate>
       
-      <guid>https://handnew04.github.io/post/wil-7%EC%9B%94-4%EC%A3%BC%EC%B0%A8/</guid>
-      <description>SQL safe update mode error  Error Code: 1175. You are using safe update mode and you tried to update a table without a WHERE that uses a KEY column. To disable safe mode, toggle the option in Preferences -&amp;gt; SQL Editor and reconnect. 하나의 레코드만을 update, delete 하도록 설정 된 모드인데 다수의 레코드를 수정하려 할때 에러 발생. 일시적 safe 모드 해제 : set sql_sate_updates=0; 영구적 해제는 워크벤치의 file - preference에서 safe mode 를 해제하면 된다.</description>
+      <guid>https://handnew04.github.io/posts/weekly_i_learn07_4/</guid>
+      <description>SQL safe update mode error Error Code: 1175. You are using safe update mode and you tried to update a table without a WHERE that uses a KEY column. To disable safe mode, toggle the option in Preferences -&amp;gt; SQL Editor and reconnect. 하나의 레코드만을 update, delete 하도록 설정 된 모드인데 다수의 레코드를</description>
     </item>
     
   </channel>

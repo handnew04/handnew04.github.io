@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>image on Handnew&#39;s blog</title>
@@ -6,19 +6,14 @@
     <description>Recent content in image on Handnew&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 12 Jul 2020 00:39:08 +0900</lastBuildDate>
-    
-	<atom:link href="https://handnew04.github.io/tags/image/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 12 Jul 2020 00:39:08 +0900</lastBuildDate><atom:link href="https://handnew04.github.io/tags/image/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[Android] 이미지 가져오기 (촬영, 내부저장소, 자르기) </title>
-      <link>https://handnew04.github.io/post/android-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0-%EC%B4%AC%EC%98%81-%EB%82%B4%EB%B6%80%EC%A0%80%EC%9E%A5%EC%86%8C-%EC%9E%90%EB%A5%B4%EA%B8%B0/</link>
+      <link>https://handnew04.github.io/posts/get_image_android/</link>
       <pubDate>Sun, 12 Jul 2020 00:39:08 +0900</pubDate>
       
-      <guid>https://handnew04.github.io/post/android-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0-%EC%B4%AC%EC%98%81-%EB%82%B4%EB%B6%80%EC%A0%80%EC%9E%A5%EC%86%8C-%EC%9E%90%EB%A5%B4%EA%B8%B0/</guid>
-      <description>지정된 비율로 리사이즈 크롭 return-data 를 이용 하여 intent 로 크롭된 이미지가 넘어오도록 함
- @Override protected void onActivityResult(int requestCode, int resultCode, Intent data) { super.onActivityResult(requestCode, resultCode, data); if (resultCode != RESULT_OK) return; switch (requestCode) { case PICK_FROM_ALBUM: Uri photoUri = data.getData(); cropImage(photoUri); break; case PICK_FROM_CAMERA: break; case CROP_FROM_IMAGE: Bundle bundle = data.getExtras(); assert bundle != null; Bitmap test = bundle.getParcelable(&amp;quot;data&amp;quot;); break; } } private void cropImage(Uri imageUri) { Intent intent= getCropIntent(imageUri); startActivityForResult(intent, CROP_FROM_IMAGE); } private Intent getCropIntent(Uri inputUri) { Intent intent = new Intent(&amp;quot;com.</description>
+      <guid>https://handnew04.github.io/posts/get_image_android/</guid>
+      <description>지정된 비율로 리사이즈 크롭 return-data 를 이용 하여 intent 로 크롭된 이미지가 넘어오도록 함 @Override protected void onActivityResult(int requestCode, int resultCode, Intent data) { super.onActivityResult(requestCode, resultCode, data); if (resultCode != RESULT_OK) return; switch (requestCode) { case PICK_FROM_ALBUM: Uri photoUri = data.getData(); cropImage(photoUri); break; case PICK_FROM_CAMERA: break; case CROP_FROM_IMAGE: Bundle bundle =</description>
     </item>
     
   </channel>

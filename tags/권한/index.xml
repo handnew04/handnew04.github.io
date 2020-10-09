@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>권한 on Handnew&#39;s blog</title>
@@ -6,22 +6,14 @@
     <description>Recent content in 권한 on Handnew&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Wed, 25 Dec 2019 22:35:44 +0900</lastBuildDate>
-    
-	<atom:link href="https://handnew04.github.io/tags/%EA%B6%8C%ED%95%9C/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 25 Dec 2019 22:35:44 +0900</lastBuildDate><atom:link href="https://handnew04.github.io/tags/%EA%B6%8C%ED%95%9C/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[Android] permission</title>
-      <link>https://handnew04.github.io/post/android-permission/</link>
+      <link>https://handnew04.github.io/posts/android_permission/</link>
       <pubDate>Wed, 25 Dec 2019 22:35:44 +0900</pubDate>
       
-      <guid>https://handnew04.github.io/post/android-permission/</guid>
-      <description>안드로이드 23 이상에서의 권한 요청
-매니패스트에 선언한 권한목록을 가져올 수 있다.
-String[] 의 형태로 받을 수 있다.
- try { String[] permissionList = context .getPackageManager() .getPackageInfo(context.getPackageName(), PackageManager.GET_PERMISSIONS) .requestedPermissions; } catch (PackageManager.NameNotFoundException e) { //throw new RuntimeException (&amp;quot;Exception&amp;quot;, e); }  권한 목록중 허가되지 않은 권한을 확인하고
-public static String[] checkPermissions(Context context, String[] permissionList) { ArrayList&amp;lt;String&amp;gt; requestList = new ArrayList&amp;lt;&amp;gt;(); for (String aPermission : permissionList) { int permissionCheck = ContextCompat.checkSelfPermission(context, aPermission); if (permissionCheck == PackageManager.</description>
+      <guid>https://handnew04.github.io/posts/android_permission/</guid>
+      <description>안드로이드 23 이상에서의 권한 요청 매니패스트에 선언한 권한목록을 가져올 수 있다. String[] 의 형태로 받을 수 있다. try { String[] permissionList = context .getPackageManager() .getPackageInfo(context.getPackageName(), PackageManager.GET_PERMISSIONS) .requestedPermissions; } catch (PackageManager.NameNotFoundException e) { //throw new RuntimeException (&amp;quot;Exception&amp;quot;, e); } 권한</description>
     </item>
     
   </channel>

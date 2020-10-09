@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ViewModel on Handnew&#39;s blog</title>
@@ -6,19 +6,14 @@
     <description>Recent content in ViewModel on Handnew&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Wed, 15 Jul 2020 00:35:28 +0900</lastBuildDate>
-    
-	<atom:link href="https://handnew04.github.io/tags/viewmodel/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 15 Jul 2020 00:35:28 +0900</lastBuildDate><atom:link href="https://handnew04.github.io/tags/viewmodel/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[Study] StudyFork 6주 차 기록</title>
-      <link>https://handnew04.github.io/post/study-studyfork-6%EC%A3%BC-%EC%B0%A8-%EA%B8%B0%EB%A1%9D/</link>
+      <link>https://handnew04.github.io/posts/studyfork_6_week/</link>
       <pubDate>Wed, 15 Jul 2020 00:35:28 +0900</pubDate>
       
-      <guid>https://handnew04.github.io/post/study-studyfork-6%EC%A3%BC-%EC%B0%A8-%EA%B8%B0%EB%A1%9D/</guid>
-      <description>ViewModel https://developer.android.com/topic/libraries/architecture/viewmodel?hl=en
- ViewModel 은 rotate 시 destory 된 액티비티의 컨텍스트를 계속 가지고 있어서 컨텍스트를 사용할 시 액티비티 컨텍스트가 아닌 Application Context 를 사용 할 것 ViewModelStoreOwner : 내가 만든걸 저장시키고 가지고 옮 Map 으로 관리하여 Owner 에 따라 같은 Owner 를 넣을 경우 같은 viewModel 객체를 가질 수 있음. -&amp;gt; Observe 한 객체의 내용 바로반영 가능 Activity 와 Fragment 일 경우 Owner 를 각각 Activity , Fragment 로 주면 다른 ViewModel 객체를 가지게 됨  LiveData  onPause onStop 시 데이터를 배출하지 않음 onStart , onResume 으로 돌아가면 배출 (active 한 상태에서만 데이터를 배출) binding 된 viewmodel 에도 lifeCycleOwner 를 넣어주어야 함.</description>
+      <guid>https://handnew04.github.io/posts/studyfork_6_week/</guid>
+      <description>ViewModel https://developer.android.com/topic/libraries/architecture/viewmodel?hl=en ViewModel 은 rotate 시 destory 된 액티비티의 컨텍스트를 계속 가지고 있어서 컨텍스트를 사용할 시 액티비티 컨텍스트가 아닌 Application Context 를 사용 할 것 ViewModelStoreOwner : 내가 만든걸 저장시키고 가지고 옮 Map</description>
     </item>
     
   </channel>

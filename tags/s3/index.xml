@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>S3 on Handnew&#39;s blog</title>
@@ -6,20 +6,14 @@
     <description>Recent content in S3 on Handnew&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 12 Jul 2020 01:22:44 +0900</lastBuildDate>
-    
-	<atom:link href="https://handnew04.github.io/tags/s3/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 12 Jul 2020 01:22:44 +0900</lastBuildDate><atom:link href="https://handnew04.github.io/tags/s3/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[Android] AWS S3 이미지 업로드</title>
-      <link>https://handnew04.github.io/post/android-aws-s3-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%97%85%EB%A1%9C%EB%93%9C/</link>
+      <link>https://handnew04.github.io/posts/aws_s3_image_upload/</link>
       <pubDate>Sun, 12 Jul 2020 01:22:44 +0900</pubDate>
       
-      <guid>https://handnew04.github.io/post/android-aws-s3-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%97%85%EB%A1%9C%EB%93%9C/</guid>
-      <description>AWS IAM 에서 ACCESS KEY, SECRET KEY 얻기 S3 에서 BUCKET 및 아래 폴더 생성 안드로이드 gradle 추가 매니패스트 서비스 추가 코드 작성   1. AWS IAM 에서 ACCESS KEY, SECRET KEY 얻기 우선 AWS 의 IAM 콘솔 - 사용자에 추가하여 액새스키와 시크릿키를 얻는다.
-시크릿키는 만들 때 한번만 보여주기 때문에 잊어버리면 사용자를 다시 추가하여야 한다.
-2. S3 에서 BUCKET 및 아래 폴더 생성 버킷을 생성하고 버킷 내부에 파일을 저장할 폴더 생성</description>
+      <guid>https://handnew04.github.io/posts/aws_s3_image_upload/</guid>
+      <description>AWS IAM 에서 ACCESS KEY, SECRET KEY 얻기 S3 에서 BUCKET 및 아래 폴더 생성 안드로이드 gradle 추가 매니패스트 서비스 추가 코드 작성 1. AWS IAM 에서 ACCESS KEY, SECRET KEY 얻기 우선 AWS 의 IAM 콘솔 - 사용자에 추가하여</description>
     </item>
     
   </channel>

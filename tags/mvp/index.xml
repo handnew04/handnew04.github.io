@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>MVP on Handnew&#39;s blog</title>
@@ -6,18 +6,14 @@
     <description>Recent content in MVP on Handnew&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Wed, 15 Jul 2020 00:29:58 +0900</lastBuildDate>
-    
-	<atom:link href="https://handnew04.github.io/tags/mvp/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 15 Jul 2020 00:29:58 +0900</lastBuildDate><atom:link href="https://handnew04.github.io/tags/mvp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[Study] StudyFork 3주 차 기록</title>
-      <link>https://handnew04.github.io/post/study-studyfork-3%EC%A3%BC-%EC%B0%A8-%EA%B8%B0%EB%A1%9D/</link>
+      <link>https://handnew04.github.io/posts/studyfork_3_week/</link>
       <pubDate>Wed, 15 Jul 2020 00:29:58 +0900</pubDate>
       
-      <guid>https://handnew04.github.io/post/study-studyfork-3%EC%A3%BC-%EC%B0%A8-%EA%B8%B0%EB%A1%9D/</guid>
-      <description>MVP  view 는 항상 in/out 만 할 것 in/out 외 다른 작업들은 모두 presenter 가 처리 presenter 가 M(model) 과 작업 view에는 각각의 함수만 존재 (성공, 아이디없음, 등) presenter 에서 분기를 가지고 해당 분기에 대한 view 함수만 호출 (view 에는 분기가 없음)  presenter 에서 성공시 -&amp;gt; view 의 성공함수 호출 presenter 에서 아이디 없음 -&amp;gt; view의 아이디없음 함수 호출  view 와 presenter 가 서로를 알고 있음 (1:1 대응, 액티비티/프래그먼트 하나당 presenter 하나 생성)  추가 :: presenter 가 생성자의 인자값으로 view를 가지고, view에서 presenter 객체를 생성하면서 view.</description>
+      <guid>https://handnew04.github.io/posts/studyfork_3_week/</guid>
+      <description>MVP view 는 항상 in/out 만 할 것 in/out 외 다른 작업들은 모두 presenter 가 처리 presenter 가 M(model) 과 작업 view에는 각각의 함수만 존재 (성공, 아이디없음, 등) presenter 에서 분기를 가지고 해당 분기에 대</description>
     </item>
     
   </channel>

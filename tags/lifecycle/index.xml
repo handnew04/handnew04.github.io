@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>lifeCycle on Handnew&#39;s blog</title>
@@ -6,20 +6,14 @@
     <description>Recent content in lifeCycle on Handnew&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 22 Jul 2019 23:01:20 +0900</lastBuildDate>
-    
-	<atom:link href="https://handnew04.github.io/tags/lifecycle/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 22 Jul 2019 23:01:20 +0900</lastBuildDate><atom:link href="https://handnew04.github.io/tags/lifecycle/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[WIL] 7월 2주차</title>
-      <link>https://handnew04.github.io/post/wil-7%EC%9B%94-2%EC%A3%BC%EC%B0%A8/</link>
+      <link>https://handnew04.github.io/posts/weekly_i_learn07_2/</link>
       <pubDate>Mon, 22 Jul 2019 23:01:20 +0900</pubDate>
       
-      <guid>https://handnew04.github.io/post/wil-7%EC%9B%94-2%EC%A3%BC%EC%B0%A8/</guid>
-      <description>안드로이드 R 에러  file 의 Invalidate Caches / Restart (캐시를 지우는 것)
-  windowSoftInputMode  키보드가 필요한 액티비티에 사용. 매니패스트의 액티비티 태그에 android:windowSoftInputMode=&amp;ldquo;&amp;rdquo; 로 사용 &amp;rdquo;&amp;rdquo; 에 adjustPan 등을 입력. 종류가 다양함  안드로이드 해상도 별 크기 대응 참고블로그
- dimens.xml의 해상도 설정은 value폴더를 나뉘는 것으로 생성 values-hdpi, values-xdpi 등 필요한 dpi 별 폴더를 res 폴더 아래에 생성하여 해당 폴더안에 dimens라는 이름으로 xml 파일 생성  안드로이드 해상도 별 크기 대응 2  dimens 로 사용 시 같은 xxhdpi 를 사용하지만 화면의 크기가 다른 경우 발생.</description>
+      <guid>https://handnew04.github.io/posts/weekly_i_learn07_2/</guid>
+      <description>안드로이드 R 에러 file 의 Invalidate Caches / Restart (캐시를 지우는 것) windowSoftInputMode 키보드가 필요한 액티비티에 사용. 매니패스트의 액티비티 태그에 android:windowSoftInputMode=&amp;quot;&amp;quot; 로 사용 &amp;quot;&amp;quot; 에 adjustPan 등을 입력. 종류가 다양함</description>
     </item>
     
   </channel>

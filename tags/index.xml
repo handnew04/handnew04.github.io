@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Handnew&#39;s blog</title>
@@ -6,20 +6,7 @@
     <description>Recent content in Tags on Handnew&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 22 Jul 2019 22:38:06 +0900</lastBuildDate>
-    
-	<atom:link href="https://handnew04.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>AdvertisingIdClient</title>
-      <link>https://handnew04.github.io/tags/advertisingidclient/</link>
-      <pubDate>Mon, 22 Jul 2019 22:38:06 +0900</pubDate>
-      
-      <guid>https://handnew04.github.io/tags/advertisingidclient/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Sun, 26 Jul 2020 17:50:32 +0900</lastBuildDate><atom:link href="https://handnew04.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Android</title>
       <link>https://handnew04.github.io/tags/android/</link>
@@ -30,47 +17,20 @@
     </item>
     
     <item>
-      <title>Aws</title>
-      <link>https://handnew04.github.io/tags/aws/</link>
-      <pubDate>Sun, 12 Jul 2020 01:22:44 +0900</pubDate>
+      <title>Spinner</title>
+      <link>https://handnew04.github.io/tags/spinner/</link>
+      <pubDate>Sun, 26 Jul 2020 17:50:32 +0900</pubDate>
       
-      <guid>https://handnew04.github.io/tags/aws/</guid>
+      <guid>https://handnew04.github.io/tags/spinner/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>DataBinding</title>
-      <link>https://handnew04.github.io/tags/databinding/</link>
-      <pubDate>Wed, 15 Jul 2020 00:30:10 +0900</pubDate>
+      <title>Study</title>
+      <link>https://handnew04.github.io/tags/study/</link>
+      <pubDate>Wed, 15 Jul 2020 00:35:40 +0900</pubDate>
       
-      <guid>https://handnew04.github.io/tags/databinding/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>DesignPattern</title>
-      <link>https://handnew04.github.io/tags/designpattern/</link>
-      <pubDate>Wed, 24 Apr 2019 13:26:32 +0900</pubDate>
-      
-      <guid>https://handnew04.github.io/tags/designpattern/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hugo</title>
-      <link>https://handnew04.github.io/tags/hugo/</link>
-      <pubDate>Thu, 04 Apr 2019 18:29:41 +0900</pubDate>
-      
-      <guid>https://handnew04.github.io/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Kotlin</title>
-      <link>https://handnew04.github.io/tags/kotlin/</link>
-      <pubDate>Tue, 09 Apr 2019 14:39:50 +0900</pubDate>
-      
-      <guid>https://handnew04.github.io/tags/kotlin/</guid>
+      <guid>https://handnew04.github.io/tags/study/</guid>
       <description></description>
     </item>
     
@@ -84,11 +44,47 @@
     </item>
     
     <item>
-      <title>LocalBroadcastManager</title>
-      <link>https://handnew04.github.io/tags/localbroadcastmanager/</link>
-      <pubDate>Tue, 13 Aug 2019 22:10:43 +0900</pubDate>
+      <title>Tips</title>
+      <link>https://handnew04.github.io/tags/tips/</link>
+      <pubDate>Wed, 15 Jul 2020 00:35:28 +0900</pubDate>
       
-      <guid>https://handnew04.github.io/tags/localbroadcastmanager/</guid>
+      <guid>https://handnew04.github.io/tags/tips/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ViewModel</title>
+      <link>https://handnew04.github.io/tags/viewmodel/</link>
+      <pubDate>Wed, 15 Jul 2020 00:35:28 +0900</pubDate>
+      
+      <guid>https://handnew04.github.io/tags/viewmodel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MVVM</title>
+      <link>https://handnew04.github.io/tags/mvvm/</link>
+      <pubDate>Wed, 15 Jul 2020 00:35:18 +0900</pubDate>
+      
+      <guid>https://handnew04.github.io/tags/mvvm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Observer</title>
+      <link>https://handnew04.github.io/tags/observer/</link>
+      <pubDate>Wed, 15 Jul 2020 00:35:18 +0900</pubDate>
+      
+      <guid>https://handnew04.github.io/tags/observer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DataBinding</title>
+      <link>https://handnew04.github.io/tags/databinding/</link>
+      <pubDate>Wed, 15 Jul 2020 00:30:10 +0900</pubDate>
+      
+      <guid>https://handnew04.github.io/tags/databinding/</guid>
       <description></description>
     </item>
     

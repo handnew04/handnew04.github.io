@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>singleton on Handnew&#39;s blog</title>
@@ -6,21 +6,23 @@
     <description>Recent content in singleton on Handnew&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Wed, 24 Apr 2019 13:26:32 +0900</lastBuildDate>
-    
-	<atom:link href="https://handnew04.github.io/tags/singleton/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Tue, 13 Aug 2019 22:05:18 +0900</lastBuildDate><atom:link href="https://handnew04.github.io/tags/singleton/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[JAVA] enum type</title>
+      <link>https://handnew04.github.io/posts/java_enum/</link>
+      <pubDate>Tue, 13 Aug 2019 22:05:18 +0900</pubDate>
+      
+      <guid>https://handnew04.github.io/posts/java_enum/</guid>
+      <description>열거 자료형 기존의 java 에서 상수를 사용할 때 아래와 같이 정의한다. //과일 public static int F_APPLE = 1; public static int F_MANGO = 2; public static int F_MELON = 3; //의류 public static int C_ZARA = 1; public static int C_MANGO = 2; public static int C_SPAO</description>
+    </item>
     
     <item>
       <title>[디자인패턴] Singleton Pattern</title>
-      <link>https://handnew04.github.io/post/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4-singleton-pattern/</link>
+      <link>https://handnew04.github.io/posts/singleton-pattern/</link>
       <pubDate>Wed, 24 Apr 2019 13:26:32 +0900</pubDate>
       
-      <guid>https://handnew04.github.io/post/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4-singleton-pattern/</guid>
-      <description>싱글톤 패턴이란 단 하나의 인스턴스만을 사용하는 패턴이다.  예시 스피커의 볼륨을 조절하는 클래스의 인스턴스가 여러개라면 조절 할 때 마다 모든 인스턴스를 조절 해야하는 번거로움이 생긴다.
-그래서 하나의 인스턴스를 사용한다.
-하나의 인스턴스를 사용하기 위해 static으로 선언한다.
-package Singleton; public class SystemSpeaker { static private SystemSpeaker instance; private int volume; private SystemSpeaker() { volume = 5; } public static SystemSpeaker getInstance() { if (instance == null) { //시스템 스피커/ 아직 생성이 되지 않았을때는 생성을 해주고 instance = new SystemSpeaker(); } //instance가 생성되어 있다면 그 인스턴스를 리턴한다.</description>
+      <guid>https://handnew04.github.io/posts/singleton-pattern/</guid>
+      <description>싱글톤 패턴이란 단 하나의 인스턴스만을 사용하는 패턴이다. 예시 스피커의 볼륨을 조절하는 클래스의 인스턴스가 여러개라면 조절 할 때 마다 모든 인스턴스를 조절 해야</description>
     </item>
     
   </channel>

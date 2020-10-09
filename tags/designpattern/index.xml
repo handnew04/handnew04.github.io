@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>DesignPattern on Handnew&#39;s blog</title>
@@ -6,53 +6,41 @@
     <description>Recent content in DesignPattern on Handnew&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Wed, 24 Apr 2019 13:26:32 +0900</lastBuildDate>
-    
-	<atom:link href="https://handnew04.github.io/tags/designpattern/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 24 Apr 2019 13:26:32 +0900</lastBuildDate><atom:link href="https://handnew04.github.io/tags/designpattern/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[디자인패턴] Singleton Pattern</title>
-      <link>https://handnew04.github.io/post/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4-singleton-pattern/</link>
+      <link>https://handnew04.github.io/posts/singleton-pattern/</link>
       <pubDate>Wed, 24 Apr 2019 13:26:32 +0900</pubDate>
       
-      <guid>https://handnew04.github.io/post/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4-singleton-pattern/</guid>
-      <description>싱글톤 패턴이란 단 하나의 인스턴스만을 사용하는 패턴이다.  예시 스피커의 볼륨을 조절하는 클래스의 인스턴스가 여러개라면 조절 할 때 마다 모든 인스턴스를 조절 해야하는 번거로움이 생긴다.
-그래서 하나의 인스턴스를 사용한다.
-하나의 인스턴스를 사용하기 위해 static으로 선언한다.
-package Singleton; public class SystemSpeaker { static private SystemSpeaker instance; private int volume; private SystemSpeaker() { volume = 5; } public static SystemSpeaker getInstance() { if (instance == null) { //시스템 스피커/ 아직 생성이 되지 않았을때는 생성을 해주고 instance = new SystemSpeaker(); } //instance가 생성되어 있다면 그 인스턴스를 리턴한다.</description>
+      <guid>https://handnew04.github.io/posts/singleton-pattern/</guid>
+      <description>싱글톤 패턴이란 단 하나의 인스턴스만을 사용하는 패턴이다. 예시 스피커의 볼륨을 조절하는 클래스의 인스턴스가 여러개라면 조절 할 때 마다 모든 인스턴스를 조절 해야</description>
     </item>
     
     <item>
       <title>[디자인패턴] Template Method Pattern</title>
-      <link>https://handnew04.github.io/post/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4-template-method-pattern/</link>
+      <link>https://handnew04.github.io/posts/template_method_pattern/</link>
       <pubDate>Mon, 22 Apr 2019 19:05:14 +0900</pubDate>
       
-      <guid>https://handnew04.github.io/post/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4-template-method-pattern/</guid>
-      <description>알고리즘의 구조를 메서드에 정의하고 하위 클래스에서 알고리즘의 구조의 변경 없이 알고리즘을 재정의 하는 패턴  구현하려는 알고리즘이 일정한 프로세스가 있다 구현하려는 알고리즘이 변경 가능성이 있다   템플릿 메서드 기본 설계구조 템플릿 메서드 패턴의 구현 단계  요구사항에 대한 알고리즘을 여러 단계로 나눈다 나눠진 알고리즘의 단계를 메서드로 선언한다 알고리즘을 수행할 템플릿 메서드를 만든다 하위 클래스에서 나눠진 메서드들을 구현한다  예제 신작 게임의 접속을 구현해주세요
- requestConnection(String str): String  유저가 게임 접속시 다음을 고려해야 합니다</description>
+      <guid>https://handnew04.github.io/posts/template_method_pattern/</guid>
+      <description>알고리즘의 구조를 메서드에 정의하고 하위 클래스에서 알고리즘의 구조의 변경 없이 알고리즘을 재정의 하는 패턴 구현하려는 알고리즘이 일정한 프로세스가 있다 구현하</description>
     </item>
     
     <item>
       <title>[디자인패턴] Adapter Pattern</title>
-      <link>https://handnew04.github.io/post/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4-adapter-pattern/</link>
+      <link>https://handnew04.github.io/posts/adapter_pattern/</link>
       <pubDate>Sun, 21 Apr 2019 16:11:26 +0900</pubDate>
       
-      <guid>https://handnew04.github.io/post/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4-adapter-pattern/</guid>
-      <description>Adapter란?  기계, 기구 등을 다목적으로 사용하기 위한 부가기구
- 전기 110v 코드를 220v 로 바꿔주는 것 또한 어댑터
-  코드에서도 마찬가지로 사용처에 맞게 변환을 해주는 역할을 한다.
-Math 라는 클래스가 있고 메서드는 double로 값을 받고 리턴값도 double 로 내보낸다.
-public class Math { public static double twoTime(double num) { return num * 2; } public static double half(double num) { return num / 2; } }  adapter 인터페이스</description>
+      <guid>https://handnew04.github.io/posts/adapter_pattern/</guid>
+      <description>Adapter란? 기계, 기구 등을 다목적으로 사용하기 위한 부가기구 전기 110v 코드를 220v 로 바꿔주는 것 또한 어댑터 코드에서도 마찬가지로 사용처에 맞게 변환을 해주</description>
     </item>
     
     <item>
       <title>[디자인패턴] Strategy Pattern</title>
-      <link>https://handnew04.github.io/post/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4-strategy-pattern/</link>
+      <link>https://handnew04.github.io/posts/strategy_pattern/</link>
       <pubDate>Fri, 19 Apr 2019 19:17:56 +0900</pubDate>
       
-      <guid>https://handnew04.github.io/post/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4-strategy-pattern/</guid>
-      <description>인터페이스 델리게이트 스트래티지 패턴   인터페이스  두 객체간의 연결을 해주는 장치 기능에 대한 선언과 구현의 분리 기능을 사용하는 통로  public interface Ainterface { //기능의 선언 public void funcA(); }  public class Aclass implements Ainterface { @Override public void funcA() { //기능의 구현 System.out.println(&amp;quot;AAA&amp;quot;); } }  public class Main { public static void main(String[] args){ Ainterface ainterface = new Aclass(); //a인터페이스를 사용할 수 있는 통로 ainterface.</description>
+      <guid>https://handnew04.github.io/posts/strategy_pattern/</guid>
+      <description>인터페이스 델리게이트 스트래티지 패턴 인터페이스 두 객체간의 연결을 해주는 장치 기능에 대한 선언과 구현의 분리 기능을 사용하는 통로 public interface Ainterface { //기능의 선언 public void</description>
     </item>
     
   </channel>
