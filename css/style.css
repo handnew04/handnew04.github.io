@@ -123,8 +123,8 @@ html, body {
 }
 
 body {
-    font: 16px/1 'Nanum-Gothic', "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #666;
+    font: 18px/1 'Nanum-Gothic', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #000;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
 }
@@ -252,7 +252,7 @@ nav.main-nav a.cta {
 a, #title, #post-list a:hover, #title:hover {
     text-decoration: none;
     color: #5badf0;
-    color: #7e7f80;
+    color: #797979;
 }
 
 p a {
