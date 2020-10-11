@@ -16,21 +16,21 @@ function isRetina() {
 	return false;
 };
  
- 
-function retina() {
+// 2x 이미지 적용 할 시
+// function retina() {
 	
-	if (!isRetina())
-		return;
+// 	if (!isRetina())
+// 		return;
 	
-	$("img.2x").map(function(i, image) {
+// 	$("img.2x").map(function(i, image) {
 		
-		var path = $(image).attr("src");
+// 		var path = $(image).attr("src");
 		
-		path = path.replace(".png", "@2x.png");
-		path = path.replace(".jpg", "@2x.jpg");
+// 		path = path.replace(".png", "@2x.png");
+// 		path = path.replace(".jpg", "@2x.jpg");
 		
-		$(image).attr("src", path);
-	});
-};
+// 		$(image).attr("src", path);
+// 	});
+// };
  
-$(document).ready(retina);
+// $(document).ready(retina);
