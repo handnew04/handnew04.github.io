@@ -123,7 +123,7 @@ html, body {
 }
 
 body {
-    font: 18px/1 'Nanum-Gothic', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: 16px/1 'Nanum-Gothic', "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #000;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
