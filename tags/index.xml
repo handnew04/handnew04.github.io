@@ -6,13 +6,31 @@
     <description>Recent content in Tags on Handnew&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 26 Jul 2020 17:50:32 +0900</lastBuildDate><atom:link href="https://handnew04.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 16 Nov 2020 03:24:16 +0900</lastBuildDate><atom:link href="https://handnew04.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Android</title>
       <link>https://handnew04.github.io/tags/android/</link>
-      <pubDate>Sun, 26 Jul 2020 17:50:32 +0900</pubDate>
+      <pubDate>Mon, 16 Nov 2020 03:24:16 +0900</pubDate>
       
       <guid>https://handnew04.github.io/tags/android/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Navigation</title>
+      <link>https://handnew04.github.io/tags/navigation/</link>
+      <pubDate>Mon, 16 Nov 2020 03:24:16 +0900</pubDate>
+      
+      <guid>https://handnew04.github.io/tags/navigation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SignleAcitivity</title>
+      <link>https://handnew04.github.io/tags/signleacitivity/</link>
+      <pubDate>Mon, 16 Nov 2020 03:24:16 +0900</pubDate>
+      
+      <guid>https://handnew04.github.io/tags/signleacitivity/</guid>
       <description></description>
     </item>
     
@@ -76,24 +94,6 @@
       <pubDate>Wed, 15 Jul 2020 00:35:18 +0900</pubDate>
       
       <guid>https://handnew04.github.io/tags/observer/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>DataBinding</title>
-      <link>https://handnew04.github.io/tags/databinding/</link>
-      <pubDate>Wed, 15 Jul 2020 00:30:10 +0900</pubDate>
-      
-      <guid>https://handnew04.github.io/tags/databinding/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>MVP</title>
-      <link>https://handnew04.github.io/tags/mvp/</link>
-      <pubDate>Wed, 15 Jul 2020 00:29:58 +0900</pubDate>
-      
-      <guid>https://handnew04.github.io/tags/mvp/</guid>
       <description></description>
     </item>
     

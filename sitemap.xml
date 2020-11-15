@@ -3,6 +3,55 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://handnew04.github.io/posts/2020-11-15/</loc>
+    <lastmod>2020-11-16T03:24:16+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://handnew04.github.io/tags/android/</loc>
+    <lastmod>2020-11-16T03:24:16+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://handnew04.github.io/</loc>
+    <lastmod>2020-11-16T03:24:16+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://handnew04.github.io/tags/navigation/</loc>
+    <lastmod>2020-11-16T03:24:16+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://handnew04.github.io/posts/</loc>
+    <lastmod>2020-11-16T03:24:16+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://handnew04.github.io/tags/signleacitivity/</loc>
+    <lastmod>2020-11-16T03:24:16+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://handnew04.github.io/tags/</loc>
+    <lastmod>2020-11-16T03:24:16+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://handnew04.github.io/posts/android_spinner/</loc>
     <lastmod>2020-07-26T17:50:32+09:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -10,35 +59,7 @@
   </url>
   
   <url>
-    <loc>https://handnew04.github.io/tags/android/</loc>
-    <lastmod>2020-07-26T17:50:32+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://handnew04.github.io/</loc>
-    <lastmod>2020-07-26T17:50:32+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://handnew04.github.io/posts/</loc>
-    <lastmod>2020-07-26T17:50:32+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://handnew04.github.io/tags/spinner/</loc>
-    <lastmod>2020-07-26T17:50:32+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://handnew04.github.io/tags/</loc>
     <lastmod>2020-07-26T17:50:32+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

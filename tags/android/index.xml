@@ -6,7 +6,16 @@
     <description>Recent content in Android on Handnew&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 26 Jul 2020 17:50:32 +0900</lastBuildDate><atom:link href="https://handnew04.github.io/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 16 Nov 2020 03:24:16 +0900</lastBuildDate><atom:link href="https://handnew04.github.io/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[Android] SingleActivity 와 Navigation Component</title>
+      <link>https://handnew04.github.io/posts/2020-11-15/</link>
+      <pubDate>Mon, 16 Nov 2020 03:24:16 +0900</pubDate>
+      
+      <guid>https://handnew04.github.io/posts/2020-11-15/</guid>
+      <description>사이드프로젝트 개발에 앞서 Single Activity를 사용할 것인가에 대해 고민한다. Single Activity? 싱글 액티비티는 하나의 액태비티를 두고 나머지 화면을 모두 프래그먼트로 구</description>
+    </item>
+    
     <item>
       <title>[Android] 스피너 (Spinner)</title>
       <link>https://handnew04.github.io/posts/android_spinner/</link>
@@ -86,15 +95,6 @@
       
       <guid>https://handnew04.github.io/posts/aws_s3_image_upload/</guid>
       <description>AWS IAM 에서 ACCESS KEY, SECRET KEY 얻기 S3 에서 BUCKET 및 아래 폴더 생성 안드로이드 gradle 추가 매니패스트 서비스 추가 코드 작성 1. AWS IAM 에서 ACCESS KEY, SECRET KEY 얻기 우선 AWS 의 IAM 콘솔 - 사용자에 추가하여</description>
-    </item>
-    
-    <item>
-      <title>[Android] 이미지 가져오기 (촬영, 내부저장소, 자르기) </title>
-      <link>https://handnew04.github.io/posts/get_image_android/</link>
-      <pubDate>Sun, 12 Jul 2020 00:39:08 +0900</pubDate>
-      
-      <guid>https://handnew04.github.io/posts/get_image_android/</guid>
-      <description>지정된 비율로 리사이즈 크롭 return-data 를 이용 하여 intent 로 크롭된 이미지가 넘어오도록 함 @Override protected void onActivityResult(int requestCode, int resultCode, Intent data) { super.onActivityResult(requestCode, resultCode, data); if (resultCode != RESULT_OK) return; switch (requestCode) { case PICK_FROM_ALBUM: Uri photoUri = data.getData(); cropImage(photoUri); break; case PICK_FROM_CAMERA: break; case CROP_FROM_IMAGE: Bundle bundle =</description>
     </item>
     
   </channel>

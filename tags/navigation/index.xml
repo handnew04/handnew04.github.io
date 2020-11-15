@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Navigation on Handnew&#39;s blog</title>
+    <link>https://handnew04.github.io/tags/navigation/</link>
+    <description>Recent content in Navigation on Handnew&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Mon, 16 Nov 2020 03:24:16 +0900</lastBuildDate><atom:link href="https://handnew04.github.io/tags/navigation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[Android] SingleActivity 와 Navigation Component</title>
+      <link>https://handnew04.github.io/posts/2020-11-15/</link>
+      <pubDate>Mon, 16 Nov 2020 03:24:16 +0900</pubDate>
+      
+      <guid>https://handnew04.github.io/posts/2020-11-15/</guid>
+      <description>사이드프로젝트 개발에 앞서 Single Activity를 사용할 것인가에 대해 고민한다. Single Activity? 싱글 액티비티는 하나의 액태비티를 두고 나머지 화면을 모두 프래그먼트로 구</description>
+    </item>
+    
+  </channel>
+</rss>
