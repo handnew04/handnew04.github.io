@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Notion on Handnew&#39;s blog</title>
+    <link>https://handnew04.github.io/tags/notion/</link>
+    <description>Recent content in Notion on Handnew&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Fri, 20 Nov 2020 00:55:23 +0900</lastBuildDate><atom:link href="https://handnew04.github.io/tags/notion/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>노션 디데이 함수</title>
+      <link>https://handnew04.github.io/posts/2020-11-19/</link>
+      <pubDate>Fri, 20 Nov 2020 00:55:23 +0900</pubDate>
+      
+      <guid>https://handnew04.github.io/posts/2020-11-19/</guid>
+      <description>기존 노션에는 디데이 기능이 없다. 칸반보드를 사용하며 계획한 날짜와 며칠이나 남았는지가 보였으면 좋겠다고 생각했다. 다행히 노션에는 Formula라는 함수</description>
+    </item>
+    
+  </channel>
+</rss>

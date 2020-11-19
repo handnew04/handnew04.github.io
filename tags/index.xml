@@ -6,7 +6,16 @@
     <description>Recent content in Tags on Handnew&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 16 Nov 2020 03:24:16 +0900</lastBuildDate><atom:link href="https://handnew04.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 20 Nov 2020 00:55:23 +0900</lastBuildDate><atom:link href="https://handnew04.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Notion</title>
+      <link>https://handnew04.github.io/tags/notion/</link>
+      <pubDate>Fri, 20 Nov 2020 00:55:23 +0900</pubDate>
+      
+      <guid>https://handnew04.github.io/tags/notion/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Android</title>
       <link>https://handnew04.github.io/tags/android/</link>
@@ -85,15 +94,6 @@
       <pubDate>Wed, 15 Jul 2020 00:35:18 +0900</pubDate>
       
       <guid>https://handnew04.github.io/tags/mvvm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Observer</title>
-      <link>https://handnew04.github.io/tags/observer/</link>
-      <pubDate>Wed, 15 Jul 2020 00:35:18 +0900</pubDate>
-      
-      <guid>https://handnew04.github.io/tags/observer/</guid>
       <description></description>
     </item>
     
