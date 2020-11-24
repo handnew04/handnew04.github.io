@@ -6,9 +6,18 @@
     <description>Recent content in Posts on Handnew&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 20 Nov 2020 00:55:23 +0900</lastBuildDate><atom:link href="https://handnew04.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 Nov 2020 23:22:03 +0900</lastBuildDate><atom:link href="https://handnew04.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>노션 디데이 함수</title>
+      <title>[Android] MVVM 예제도 다 1:1인데 MVP랑 차이가 뭘까?</title>
+      <link>https://handnew04.github.io/posts/2020-11-24/</link>
+      <pubDate>Tue, 24 Nov 2020 23:22:03 +0900</pubDate>
+      
+      <guid>https://handnew04.github.io/posts/2020-11-24/</guid>
+      <description>MVVM을 사용하는 이유? devHyeon님의 특강(?) 통해 알게된 MVVM을 사용하는 이유(MVP와 MVVM의 차이점)에 대한 정리. 직접 작성하신 샘</description>
+    </item>
+    
+    <item>
+      <title>[Notion] 노션 디데이 함수</title>
       <link>https://handnew04.github.io/posts/2020-11-19/</link>
       <pubDate>Fri, 20 Nov 2020 00:55:23 +0900</pubDate>
       
@@ -86,15 +95,6 @@
       
       <guid>https://handnew04.github.io/posts/studyfork_2_week/</guid>
       <description>Recyclerview onClick set 은 create 에서 (viewHolder 에서) viewholder 내부에서 bind 시 데이터타입 받을 때 동작할 함수를 생성해서 url 의 변경만 bind 에서 인터페이스 방법은 &amp;lsquo;리스너 패턴&amp;rsquo</description>
-    </item>
-    
-    <item>
-      <title>[Study] StudyFork 1주 차 기록</title>
-      <link>https://handnew04.github.io/posts/studyfork_1_week/</link>
-      <pubDate>Wed, 15 Jul 2020 00:23:51 +0900</pubDate>
-      
-      <guid>https://handnew04.github.io/posts/studyfork_1_week/</guid>
-      <description>토요일에 pr 머지 되야 함 HW-n , n = 주차 (1주차 2주차 ..) 코맨트 하나당 커밋 하나 reformat code (ctrl art l) 파일의 changed 를 최대한 줄이기 위함 리포멧 파일 옵션 둘다 체크 code style Kotlin - scheme default IDE</description>
     </item>
     
   </channel>

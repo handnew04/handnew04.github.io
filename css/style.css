@@ -111,8 +111,12 @@ table {
 
 /* Spacing */
 
-.post h1, h3, h4, h5, p, #post-body ul, #post-list li, #post-body ol, pre {
+.post h1, h3, h4, h5, p, #post-body ul, #post-list li, #post-body ol {
     margin-bottom: 20px;
+}
+
+.post pre {
+    margin-bottom: 5px;
 }
 
 
@@ -482,7 +486,7 @@ thead th, th {
 }
 
 img {
-    width: 100%;
+    /* width: 100%; */
     max-width: 100%;
     border-radius: 3px;
 }

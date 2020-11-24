@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		
+		<meta name="description" content="dev step by step">
+		<meta name="generator" content="Hugo 0.76.2" />
+		<title>[Android] MVVM 예제도 다 1:1인데 MVP랑 차이가 뭘까? &middot; Handnew&#39;s blog</title>
+		<link rel="shortcut icon" href="https://handnew04.github.io/images/favicon.ico">
+		<link rel="stylesheet" href="https://handnew04.github.io/css/style.css">
+
+		
+		<link rel="stylesheet" href="https://handnew04.github.io/css/monosocialiconsfont.css">
+		
+
+		
+		<link href="https://handnew04.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Handnew&#39;s blog" />
+		
+
+		
+		
+		<link rel="stylesheet" href="https://handnew04.github.io/css/rainbow.css">
+		<script src="https://handnew04.github.io/css/highlight.pack.js"></script>
+		<script>hljs.initHighlightingOnLoad();</script>
+	</head>
+
+    <body>
+       <nav class="main-nav">
+	
+	
+		<a href='https://handnew04.github.io/'> <span class="arrow">←</span>Home</a>
+	
+	<a href='https://github.com/handnew04' target="_blank">About</a>
+	<a href='https://handnew04.github.io/posts'>Archive</a>
+	<a href='https://handnew04.github.io/tags'>Tags</a>
+	<a href='https://handnew04.github.io/search'>Search</a>
+
+	
+</nav>
+
+
+        <section id="wrapper" class="post">
+            <article>
+                <header>
+                    <h1>
+                        [Android] MVVM 예제도 다 1:1인데 MVP랑 차이가 뭘까?
+                    </h1>
+                    <h2 class="headline">
+                    Nov 24, 2020 23:22
+                    · 3132 words
+                    · 7 minute read
+                      <span class="tags">
+                      
+                      
+                          
+                              <a href="https://handnew04.github.io/tags/mvvm">MVVM</a>
+                          
+                              <a href="https://handnew04.github.io/tags/mvp">MVP</a>
+                          
+                              <a href="https://handnew04.github.io/tags/pattern">Pattern</a>
+                          
+                              <a href="https://handnew04.github.io/tags/android">Android</a>
+                          
+                      
+                      
+                      </span>
+                    </h2>
+                </header>
+                
+                  
+                    <div id="toc">
+                      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#mvvm을-사용하는-이유">MVVM을 사용하는 이유?</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#mvp">MVP</a></li>
+    <li><a href="#mvvm">MVVM</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                    </div>
+                  
+                
+                <section id="post-body">
+                    <h2 id="mvvm을-사용하는-이유">MVVM을 사용하는 이유?</h2>
+<p><a href="https://github.com/devHyeon0312">devHyeon</a>님의 특강(?) 통해 알게된 MVVM을 사용하는 이유(MVP와 MVVM의 차이점)에 대한 정리.<br>
+직접 작성하신 샘플코드로 설명을 위해 만들어진 코드이기 때문에 실제로 사용한다는 생각보다는 이런 차이점이 있구나를 이해시키는데 집중되어 있다고 하셨다.<br>
+질문 하나에서 시작된 특별 과외에 대한 <a href="https://github.com/devHyeon0312">devHyeon</a>님의 노고에 감사를 표합니다.😆</p>
+<h4 id="질문">질문</h4>
+<p><em>mvvm은 1:n 의 특징을 가지고 있다고 하는데 예제는 다 1:1로 되어있다. mvp와의 차이는 viewmodel이 view를 모른다는 이유 인가?</em></p>
+<h2 id="mvp">MVP</h2>
+<p>view → presenter → model → presenter → view</p>
+<p>순서로 이벤트 발생 후 데이터 이동이 일어나는데, view가 presenter에 넘어온 데이터를 요청하는게 아니라 presenter과 model에서 넘어온 값을 view에게 전달을 해주는 형식이다.<br>
+그래서 presenter는 어느 view로 가야하는지를 알아야 하기때문에, view는 어느 presenter에 이벤트(데이터)를 요청해야 할지 알아야 하기 때문에 view와 presenter는 서로를 알아야한다. → 1:1 관계의 형성<br>
+여기서 presenter는 필요한 로직별 여러개의 model을 가질 수 있다. (서버 데이터, 로컬 데이터 등의 기능을 갖는것도 마찬가지이다.)</p>
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#6ab825;font-weight:bold">class</span> <span style="color:#447fcf;text-decoration:underline">MainPresenter</span> {
+    <span style="color:#6ab825;font-weight:bold">private</span> <span style="color:#6ab825;font-weight:bold">final</span> String TAG = MainPresenter.<span style="color:#bbb">class</span>.<span style="color:#bbb">getSimpleName</span>();
+
+    <span style="color:#6ab825;font-weight:bold">private</span> MainView mainView;
+    <span style="color:#6ab825;font-weight:bold">private</span> CalcModel calcModel;
+    <span style="color:#6ab825;font-weight:bold">private</span> MainModel mainModel;
+
+    MainPresenter(MainView mainView) {
+        <span style="color:#6ab825;font-weight:bold">this</span>.<span style="color:#bbb">mainView</span>  = mainView;
+        <span style="color:#6ab825;font-weight:bold">this</span>.<span style="color:#bbb">calcModel</span> = <span style="color:#6ab825;font-weight:bold">new</span> CalcModel();
+        <span style="color:#6ab825;font-weight:bold">this</span>.<span style="color:#bbb">mainModel</span> = <span style="color:#6ab825;font-weight:bold">new</span> MainModel();
+    }
+</code></pre></div><p>예제의 모델은 mainModel과 calcModel로 나뉘는데 main에서만 필요한 비즈니스 로직과, calc 로직을 따로 분리하여 모델을 잡아두었다.<br>
+presenter의 생성자에서 연결된 view를 받아오는 것을 확인할 수 있다.</p>
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#999;font-style:italic">//MainPresenter 내부 코드 중
+</span><span style="color:#999;font-style:italic"></span><span style="color:#6ab825;font-weight:bold">void</span> <span style="color:#447fcf">onItemClick</span>(String item) {
+        <span style="color:#6ab825;font-weight:bold">if</span> (mainView != <span style="color:#6ab825;font-weight:bold">null</span>) {
+            CalcLogic(item);
+            mainView.<span style="color:#bbb">setInputData</span>(calcModel.<span style="color:#bbb">getInputData</span>());
+            mainView.<span style="color:#bbb">setResultData</span>(calcModel.<span style="color:#bbb">getOutputData</span>());
+        }
+    }
+</code></pre></div><p>앞서 말했듯이 presenter가 view에게 데이터를 전달해주기 때문에 presenter 내부에서 view의 메서드를 호출하여 calcModel에서 넘어온 데이터를 전달한다.</p>
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#999;font-style:italic">//MainActivity의 내부 코드 중
+</span><span style="color:#999;font-style:italic"></span><span style="color:#ffa500">@Override</span>
+<span style="color:#6ab825;font-weight:bold">public</span> <span style="color:#6ab825;font-weight:bold">void</span> <span style="color:#447fcf">setInputData</span>(String inputData) {
+    <span style="color:#999;font-style:italic">//view가 최종적으로 그릴지 말지를 결정한다.
+</span><span style="color:#999;font-style:italic"></span>    xml.<span style="color:#bbb">tvInputData</span>.<span style="color:#bbb">setText</span>(inputData);
+}
+</code></pre></div><p><strong>결국 받은 데이터를 화면에 그릴지 말지 결정하는 것은 View의 역할</strong>이기 때문에 setText같은 코드가 없다면 데이터가 넘어와도 화면에 보이지 않게 된다.</p>
+<p><em>만약 화면에서 시간표시를 없애려 할 때 어떤일이 연쇄적으로 발생하는지 알아보자.</em></p>
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#6ab825;font-weight:bold">public</span> <span style="color:#6ab825;font-weight:bold">interface</span> <span style="color:#447fcf;text-decoration:underline">MainView</span> {
+
+    <span style="color:#6ab825;font-weight:bold">void</span> <span style="color:#447fcf">setInputData</span>(String inputData);
+
+    <span style="color:#6ab825;font-weight:bold">void</span> <span style="color:#447fcf">setResultData</span>(String resultData);
+
+    <span style="color:#999;font-style:italic">//void setTime(String time);
+</span><span style="color:#999;font-style:italic"></span>}
+</code></pre></div><p>먼저 MainView 인터페이스에서 setTime 메서드를 주석 처리 했다.</p>
+<p><img src="/images/post/20201124_01.png" alt=""></p>
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#999;font-style:italic">//    @Override
+</span><span style="color:#999;font-style:italic">//    public void setTime(String time) {
+</span><span style="color:#999;font-style:italic">//        xml.tvTime.setText(time);
+</span><span style="color:#999;font-style:italic">//    }
+</span></code></pre></div><p>그에 따라 MainActivity의 오버라이딩한 setTime 메서드가 에러가 발생한다. 이것도 주석 처리를 해주자.</p>
+<p><img src="/images/post/20201124_02.png" alt=""></p>
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">    <span style="color:#ffa500">@SuppressLint</span>(<span style="color:#ed9d13">&#34;DefaultLocale&#34;</span>)
+    <span style="color:#6ab825;font-weight:bold">private</span> <span style="color:#6ab825;font-weight:bold">void</span> <span style="color:#447fcf">TimeLogic</span>() {
+        Calendar calendar = Calendar.<span style="color:#bbb">getInstance</span>(); <span style="color:#999;font-style:italic">// 칼렌다 변수
+</span><span style="color:#999;font-style:italic"></span>        <span style="color:#6ab825;font-weight:bold">int</span> year = calendar.<span style="color:#bbb">get</span>(Calendar.<span style="color:#bbb">YEAR</span>);
+        <span style="color:#6ab825;font-weight:bold">int</span> month = calendar.<span style="color:#bbb">get</span>(Calendar.<span style="color:#bbb">MONTH</span>);
+        <span style="color:#6ab825;font-weight:bold">int</span> day = calendar.<span style="color:#bbb">get</span>(Calendar.<span style="color:#bbb">DAY_OF_MONTH</span>);
+        <span style="color:#6ab825;font-weight:bold">int</span> hour = calendar.<span style="color:#bbb">get</span>(Calendar.<span style="color:#bbb">HOUR_OF_DAY</span>);
+        <span style="color:#6ab825;font-weight:bold">int</span> minute = calendar.<span style="color:#bbb">get</span>(Calendar.<span style="color:#bbb">MINUTE</span>);
+        <span style="color:#6ab825;font-weight:bold">int</span> second = calendar.<span style="color:#bbb">get</span>(Calendar.<span style="color:#bbb">SECOND</span>);
+        mainModel.<span style="color:#bbb">setNowTime</span>(String.<span style="color:#bbb">format</span>(<span style="color:#ed9d13">&#34;%d.%d.%d %d시 %d분 %d초&#34;</span>,year,month,day,hour,minute,second));
+<span style="color:#999;font-style:italic">//      mainView.setTime(mainModel.getNowTime());
+</span><span style="color:#999;font-style:italic"></span>    }
+</code></pre></div><p>MainPresenter에서 사용하던 mainView의 setTime도 에러가 뜬다. 이것도 주석처리를 해주었다.<br>
+화면에서 안보이게는 했으니 기능 자체를 빼보자!<br>
+MainActivity에서 setTimer() 를 지우고,<br>
+MainPresenter에서 getTime()을 지우고, TimeLogic()을 지우고,<br>
+MainModel에서 nowTime 변수를 지우면 된다.</p>
+<p>분명 계산기 기능과는 분리된 기능임에도 기능 하나를 수정하기 위해서는 View와 Presenter, Model을 모두 수정해야하는 일이 발생한다.</p>
+<p>그럼 MVVM의 경우는 어떨까?</p>
+<h2 id="mvvm">MVVM</h2>
+<p><img src="/images/post/20201124_03.png" alt="">
+<img src="/images/post/20201124_04.png" alt=""></p>
+<p>우선 패키지와 구조인데, MVP와 MVVM의 다른점을 보여주기 위해 구조를 거의 동일하게 맞춘 상태이다.<br>
+조금 다른점에서 VM의 특징이 드러난다.<br>
+MVP의 경우 view마다 Presenter가 있는것을 볼수 있다.<br>
+MVVM의 경우 Main과 Usage중 Main에만 MainViewModel이 존재하는것을 볼 수 있다.</p>
+<p><em>잠시 뷰모델이 어떤 경우에 1:1로 view와 viewModel을 갖는지, 어떤 경우에 1:N의 관계를 갖는지 알아보자.</em></p>
+<p><img src="/images/post/20201124_05.png" alt=""></p>
+<p>샘플앱의 실행화면인데, 표시한 것 처럼 1번 기능과 2번 기능은 완전히 별개의 로직이다. 이런 경우 각각의 기능에 따라 ViewModel이 2개가 한 개의 view안에 들어가게 된다.<br>
+1번 기능은 MainViewModel의 기능이고 → MainActivity에서만 쓰이는 기능 → 1:1로 매칭<br>
+2번 기능은 CalcViewModel의 기능이다. → 여러군데에서 쓰이는 기능 → 1:n으로 매칭가능</p>
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#6ab825;font-weight:bold">public</span> <span style="color:#6ab825;font-weight:bold">class</span> <span style="color:#447fcf;text-decoration:underline">MainActivity</span> <span style="color:#6ab825;font-weight:bold">extends</span> BaseActivity&lt;ActivityMainBinding&gt; <span style="color:#6ab825;font-weight:bold">implements</span> MainView {
+    <span style="color:#6ab825;font-weight:bold">private</span> <span style="color:#6ab825;font-weight:bold">final</span> String TAG = MainActivity.<span style="color:#bbb">class</span>.<span style="color:#bbb">getSimpleName</span>();
+    <span style="color:#6ab825;font-weight:bold">private</span> <span style="color:#6ab825;font-weight:bold">final</span> <span style="color:#6ab825;font-weight:bold">int</span> TIME_TICK = 1000;
+
+    <span style="color:#6ab825;font-weight:bold">private</span> CalcViewModel calcViewModel;
+    <span style="color:#6ab825;font-weight:bold">private</span> MainViewModel mainViewModel;
+</code></pre></div><p>따라서 MainActivity(view)는 두개의 ViewModel을 갖게 된다.</p>
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#6ab825;font-weight:bold">public</span> <span style="color:#6ab825;font-weight:bold">class</span> <span style="color:#447fcf;text-decoration:underline">UsageActivity</span> <span style="color:#6ab825;font-weight:bold">extends</span> BaseActivity&lt;ActivityUsageBinding&gt; <span style="color:#6ab825;font-weight:bold">implements</span> UsageView {
+    <span style="color:#6ab825;font-weight:bold">private</span> <span style="color:#6ab825;font-weight:bold">final</span> String TAG = UsageActivity.<span style="color:#bbb">class</span>.<span style="color:#bbb">getSimpleName</span>();
+
+    <span style="color:#6ab825;font-weight:bold">private</span> CalcViewModel calcViewModel;
+
+    <span style="color:#6ab825;font-weight:bold">private</span> UsageAdapter usageAdapter;
+</code></pre></div><p>UasgeActivty의 경우 Usage만의 특별한 기능이 없이 Calc의 결과 리스트만 보여주기 때문에 따로 1:1로 매칭된 ViewModel 없이 CalcViewModel을 사용한다.<br>
+따라서 CalcViewModel은 1:N의 관계를 형성하게 된다. 
+<em>물론 위의 예제 자체가 이런 관계들이 가능하다는 것을 보여주기 위해 짜여진 극단적인 예제라는 것을 참고해야한다.</em></p>
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#6ab825;font-weight:bold">public</span> <span style="color:#6ab825;font-weight:bold">class</span> <span style="color:#447fcf;text-decoration:underline">MainViewModel</span> <span style="color:#6ab825;font-weight:bold">extends</span> ViewModel {
+    <span style="color:#6ab825;font-weight:bold">private</span> MutableLiveData&lt;MainModel&gt; mainModel = <span style="color:#6ab825;font-weight:bold">new</span> MutableLiveData&lt;&gt;();
+
+    <span style="color:#6ab825;font-weight:bold">public</span> LiveData&lt;MainModel&gt; <span style="color:#447fcf">getMainModel</span>() {
+        <span style="color:#6ab825;font-weight:bold">if</span> (mainModel == <span style="color:#6ab825;font-weight:bold">null</span>) {
+            mainModel = <span style="color:#6ab825;font-weight:bold">new</span> MutableLiveData&lt;MainModel&gt;();
+        }
+        <span style="color:#6ab825;font-weight:bold">return</span> mainModel;
+    }
+
+    <span style="color:#6ab825;font-weight:bold">void</span> <span style="color:#447fcf">setTime</span>() {
+        mainModel.<span style="color:#bbb">setValue</span>(<span style="color:#6ab825;font-weight:bold">new</span> MainModel(TimeLogic()));
+    }
+
+    <span style="color:#ffa500">@SuppressLint</span>(<span style="color:#ed9d13">&#34;DefaultLocale&#34;</span>)
+    <span style="color:#6ab825;font-weight:bold">private</span> String <span style="color:#447fcf">TimeLogic</span>() {
+        Calendar calendar = Calendar.<span style="color:#bbb">getInstance</span>(); <span style="color:#999;font-style:italic">// 칼렌다 변수
+</span><span style="color:#999;font-style:italic"></span>        <span style="color:#6ab825;font-weight:bold">int</span> year = calendar.<span style="color:#bbb">get</span>(Calendar.<span style="color:#bbb">YEAR</span>);
+        <span style="color:#6ab825;font-weight:bold">int</span> month = calendar.<span style="color:#bbb">get</span>(Calendar.<span style="color:#bbb">MONTH</span>);
+        <span style="color:#6ab825;font-weight:bold">int</span> day = calendar.<span style="color:#bbb">get</span>(Calendar.<span style="color:#bbb">DAY_OF_MONTH</span>);
+        <span style="color:#6ab825;font-weight:bold">int</span> hour = calendar.<span style="color:#bbb">get</span>(Calendar.<span style="color:#bbb">HOUR_OF_DAY</span>);
+        <span style="color:#6ab825;font-weight:bold">int</span> minute = calendar.<span style="color:#bbb">get</span>(Calendar.<span style="color:#bbb">MINUTE</span>);
+        <span style="color:#6ab825;font-weight:bold">int</span> second = calendar.<span style="color:#bbb">get</span>(Calendar.<span style="color:#bbb">SECOND</span>);
+        <span style="color:#6ab825;font-weight:bold">return</span> String.<span style="color:#bbb">format</span>(<span style="color:#ed9d13">&#34;%d.%d.%d %d시 %d분 %d초&#34;</span>,year,month,day,hour,minute,second);
+    }
+}
+</code></pre></div><p>우선 MainViewModel을 보면 viewmodel 내에서 view를 전혀 모르는 것을 확인할 수 있다.</p>
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#999;font-style:italic">//MainActivity 내부 코드 중
+</span><span style="color:#999;font-style:italic"></span><span style="color:#ffa500">@Override</span>
+<span style="color:#6ab825;font-weight:bold">public</span> <span style="color:#6ab825;font-weight:bold">void</span> <span style="color:#447fcf">setMainViewModel</span>() {
+    mainViewModel = <span style="color:#6ab825;font-weight:bold">new</span> ViewModelProvider(<span style="color:#6ab825;font-weight:bold">this</span>).<span style="color:#bbb">get</span>(MainViewModel.<span style="color:#bbb">class</span>);
+    mainViewModel.<span style="color:#bbb">getMainModel</span>().<span style="color:#bbb">observe</span>(<span style="color:#6ab825;font-weight:bold">this</span>, mainModel -&gt; {
+        xml.<span style="color:#bbb">tvTime</span>.<span style="color:#bbb">setText</span>(mainModel.<span style="color:#bbb">getNowTime</span>());
+    });
+}
+</code></pre></div><p>MainActivity에서 viewModel을 observe 해서 데이터를 받는다.</p>
+<p><em>MVP와 마찬가지로 MainActivity에서 시계 기능을 뺀다고 가정해보자.</em></p>
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#6ab825;font-weight:bold">public</span> <span style="color:#6ab825;font-weight:bold">interface</span> <span style="color:#447fcf;text-decoration:underline">MainView</span> {
+
+    <span style="color:#6ab825;font-weight:bold">void</span> <span style="color:#447fcf">setCalcViewModel</span>();
+
+    <span style="color:#6ab825;font-weight:bold">void</span> <span style="color:#447fcf">setMainViewModel</span>();
+
+    <span style="color:#999;font-style:italic">//void setTime();
+</span><span style="color:#999;font-style:italic"></span>}
+</code></pre></div><p>MainView에서 setTime()을 마찬가지로 주석처리하고</p>
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#999;font-style:italic">//    @Override
+</span><span style="color:#999;font-style:italic">//    public void setTime() {
+</span><span style="color:#999;font-style:italic">//        Thread thread = new Thread() {
+</span><span style="color:#999;font-style:italic">//            @Override
+</span><span style="color:#999;font-style:italic">//            public void run() {
+</span><span style="color:#999;font-style:italic">//                while (!isInterrupted()) {
+</span><span style="color:#999;font-style:italic">//                    runOnUiThread(() -&gt; mainViewModel.setTime());
+</span><span style="color:#999;font-style:italic">//                    try {
+</span><span style="color:#999;font-style:italic">//                        Thread.sleep(TIME_TICK);
+</span><span style="color:#999;font-style:italic">//                    } catch (InterruptedException e) {
+</span><span style="color:#999;font-style:italic">//                        e.printStackTrace();
+</span><span style="color:#999;font-style:italic">//                    }
+</span><span style="color:#999;font-style:italic">//                }
+</span><span style="color:#999;font-style:italic">//            }
+</span><span style="color:#999;font-style:italic">//        };
+</span><span style="color:#999;font-style:italic">//        thread.start();
+</span><span style="color:#999;font-style:italic">//    }
+</span></code></pre></div><p>MainActivity에서 에러가 뜨는 오버라이딩 setTime도 주석처리한다.</p>
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#ffa500">@Override</span>
+<span style="color:#6ab825;font-weight:bold">public</span> <span style="color:#6ab825;font-weight:bold">void</span> <span style="color:#447fcf">setMainViewModel</span>() {
+    mainViewModel = <span style="color:#6ab825;font-weight:bold">new</span> ViewModelProvider(<span style="color:#6ab825;font-weight:bold">this</span>).<span style="color:#bbb">get</span>(MainViewModel.<span style="color:#bbb">class</span>);
+    mainViewModel.<span style="color:#bbb">getMainModel</span>().<span style="color:#bbb">observe</span>(<span style="color:#6ab825;font-weight:bold">this</span>, mainModel -&gt; {
+       <span style="color:#999;font-style:italic">// xml.tvTime.setText(mainModel.getNowTime());
+</span><span style="color:#999;font-style:italic"></span>    });
+}
+</code></pre></div><p>MainActivity에서 setText로 시간을 보여주던 부분도 주석처리했다.</p>
+<p><img src="/images/post/20201124_06.png" alt="">
+MainViewModel에선 따로 에러발생 없이 setTime 메서드가 사용되는 곳이 없다고 보일 뿐이다.<br>
+이처럼 MVVM에서 기능을 수정할땐 View와 ViewModel 모두 수정이 필요한 것이 아니라 view에서만 수정해주면 된다.  → 유지보수가 용이하다.</p>
+<p>그럼 아예 기능을 완전히 삭제하려면?</p>
+<p>ViewModel에서 기능을 수정하거나 삭제하려면 해당 기능이 어디에서 사용되고 있는지 정확히 파악한 후 수정해야한다. 위에서 설명했듯 1:n 관계도 가능하기 때문에 여러 view에서 사용되고 있는 기능이라면 많은 주의가 필요하다.</p>
+<p>그래서 ViewModel 내에서 기능 수정은 최소한으로 하는것이 좋다.<br>
+이는 곧 애초에 구조를 잡고 설계할 때 수정이 최대한 없도록 정하고 만들어야 하는 것이다.<br>
+그래서 MVVM은 한번 만들어 두면 유지보수에서 탁월하지만, MVVM을 사용하기 위해서는 아래와 같은 문제를 주의해야한다.</p>
+<ol>
+<li>설계단계에서 ViewModel을 최대한 완성형의 설계를 생각해야한다. (추후 수정을 최소한으로 하기 위해)</li>
+<li>1번의 이유로 시간이 설계와 초기 작업에서 시간이 오래걸린다.</li>
+<li>작은 기능에 대해 MVVM을 사용하려하면 오히려 불필요한 시간과 보일러플레이트 코드가 늘어날 수 있다.</li>
+</ol>
+<p>보통 프로젝트의 모든 부분을 하나의 패턴으로 만들지는 않는다고 한다. MVVM을 사용하더라도 맨처음 보여주는 스플래쉬 화면 같은 경우엔 기능도 크게 없는데 VM을 사용하면 큰 의미가 없이 코드만 들어나기 때문에 mvp나 그냥 액티비티 내에서 끝내기도 한다고 한다.</p>
+<p>추가로
+위의 viewmodel에서 사용되지 않는 코드로 나타날때 꼭 지워야 하는가? 에 대한 내용인데 오히려 지우지 않는쪽이 난독화에는 도움이 된다.<br>
+보안이 중요하거나 크기가 큰 프로젝트의 경우 일부러 쓸때없는 코드들을 같이 넣어서 난독화를 풀때 더 어렵게 만들기도 한다고.<br>
+특히 문자열의 경우 난독화가 되지 않기 때문에 a=&ldquo;h&rdquo; 처럼 한글자씩 따로 string 값을 줘서 진짜 내용을 따라가기 귀찮게 만들기도 한다고한다.</p>
+<h4 id="sampleapp-code">SampleApp Code</h4>
+<p><a href="https://github.com/handnew04/mvp-mvvm">https://github.com/handnew04/mvp-mvvm</a></p>
+
+                </section>
+            </article>
+         
+
+            
+
+            
+
+            
+          
+
+
+<script src="https://utteranc.es/client.js"
+repo="handnew04/handnew04.github.io"
+issue-term="title"
+theme="github-light"
+crossorigin="anonymous"
+async>
+</script>
+
+
+            <footer id="footer">
+    
+    <p class="small">
+    
+       © Yujung 2020 <i class="fa fa-heart" aria-hidden="true"></i> 
+    
+    </p>
+    <p class="small">
+        
+        <a href="https://handnew04.github.io/index.xml" type="application/rss+xml" target="_blank"><i class="fas fa-rss"></i>RSS</a>
+        
+       / Powered by <a href="http://www.gohugo.io/">Hugo</a> Theme By <a href="https://github.com/nodejh/hugo-theme-cactus-plus">nodejh</a>
+    </p>
+</footer>
+
+        </section>
+   
+        <script src="https://handnew04.github.io/js/jquery-3.3.1.min.js"></script>
+<script src="https://handnew04.github.io/js/main.js"></script>
+<script src="https://handnew04.github.io/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-137481057-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+
+
+
+
+       
+    </body>
+</html>
