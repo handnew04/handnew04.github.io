@@ -1,0 +1,31 @@
+baseurl = "https://handnew04.github.io/"
+languageCode = "ko-kr"
+title = "Handnew's blog"
+theme = "cactus"
+preserveTaxonomyNames = true
+rssLimit = 10
+paginate = 4
+pygmentsCodefences = true
+pygmentsStyle = "native"
+enableRobotsTXT = true
+googleAnalytics ="UA-137481057-1"
+hasCJKLanguage = true
+
+[params]
+    enableGoogleAnalytics = true
+    enableRSS = true
+	enableToc = true
+	description = "dev step by step"
+    enableSummary = true
+    useDescriptionReplaceSummary = true
+
+    [params.logo]
+    url = "logo.png"
+    width = 50
+    height = 50
+    alt = "Logo"
+
+ [sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.6

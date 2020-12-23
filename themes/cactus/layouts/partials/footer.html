@@ -1,0 +1,18 @@
+<footer id="footer">
+    {{ if .Site.Social }}
+        {{ partial "social.html" . }}
+    {{ end }}
+    <p class="small">
+    {{ with .Site.Params.copyright }}
+        {{ . | markdownify }}
+    {{ else }}
+       © Yujung {{ now.Format "2006"}} <i class="fa fa-heart" aria-hidden="true"></i> {{ .Site.Params.Author }}
+    {{ end }}
+    </p>
+    <p class="small">
+        {{ if .Site.Params.enableRSS }}
+        <a href="{{ .Site.RSSLink }}" type="application/rss+xml" target="_blank"><i class="fas fa-rss"></i>RSS</a>
+        {{ end }}
+       / Powered by <a href="http://www.gohugo.io/">Hugo</a> Theme By <a href="https://github.com/nodejh/hugo-theme-cactus-plus">nodejh</a>
+    </p>
+</footer>
