@@ -1,97 +1,12 @@
-<!DOCTYPE html>
-<html lang="ko-kr">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="google-site-verification" content="A_XdUx0_-T0KobQbEBvPZ5ffTJlRJqNYr2engr5rpjI" />
-		
-		
-		<meta name="description" content="dev step by step">
-		<meta name="generator" content="Hugo 0.76.2" />
-		<title>[디자인패턴] Adapter Pattern &middot; Handnew&#39;s blog</title>
-		<link rel="shortcut icon" href="https://handnew04.github.io/images/favicon.ico">
-		<link rel="stylesheet" href="https://handnew04.github.io/css/style.css">
-
-		
-		<link rel="stylesheet" href="https://handnew04.github.io/css/monosocialiconsfont.css">
-		
-
-		
-		<link href="https://handnew04.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Handnew&#39;s blog" />
-		
-
-		
-		
-		<link rel="stylesheet" href="https://handnew04.github.io/css/rainbow.css">
-		<script src="https://handnew04.github.io/css/highlight.pack.js"></script>
-		<script>hljs.initHighlightingOnLoad();</script>
-		<script data-ad-client="ca-pub-2907304965705395" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-	</head>
-
-    <body>
-       <nav class="main-nav">
-	
-	
-		<a href='https://handnew04.github.io/'> <span class="arrow">←</span>Home</a>
-	
-	<a href='https://github.com/handnew04' target="_blank">About</a>
-	<a href='https://handnew04.github.io/posts'>Archive</a>
-	<a href='https://handnew04.github.io/tags'>Tags</a>
-	<a href='https://handnew04.github.io/search'>Search</a>
-
-	
-</nav>
-
-
-        <section id="wrapper" class="post">
-            <article>
-                <header>
-                    <h1>
-                        [디자인패턴] Adapter Pattern
-                    </h1>
-                    <h2 class="headline">
-                    Apr 21, 2019 16:11
-                    · 459 words
-                    · 1 minute read
-                      <span class="tags">
-                      
-                      
-                          
-                              <a href="https://handnew04.github.io/tags/designpattern">DesignPattern</a>
-                          
-                              <a href="https://handnew04.github.io/tags/adapter">adapter</a>
-                          
-                      
-                      
-                      </span>
-                    </h2>
-                </header>
-                
-                  
-                    <div id="toc">
-                      <nav id="TableOfContents">
-  <ul>
-    <li><a href="#adapter란">Adapter란?</a>
-      <ul>
-        <li><a href="#reference">Reference</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-                    </div>
-                  
-                
-                <section id="post-body">
-                    <h2 id="adapter란">Adapter란?</h2>
-<hr>
-<ul>
-<li>기계, 기구 등을 다목적으로 사용하기 위한 부가기구<!-- raw HTML omitted --></li>
-<li>전기 110v 코드를 220v 로 바꿔주는 것 또한 어댑터<!-- raw HTML omitted --></li>
-</ul>
-<p>코드에서도 마찬가지로 사용처에 맞게 변환을 해주는 역할을 한다.</p>
-<p>Math 라는 클래스가 있고 메서드는 double로 값을 받고 리턴값도 double 로 내보낸다.</p>
-<pre><code>public class Math {
+<!doctype html><html lang=ko-kr><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge,chrome=1"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=google-site-verification content="A_XdUx0_-T0KobQbEBvPZ5ffTJlRJqNYr2engr5rpjI"><meta name=description content="dev step by step"><meta name=generator content="Hugo 0.79.1"><title>[디자인패턴] Adapter Pattern &#183; Handnew's blog</title><link rel="shortcut icon" href=https://handnew04.github.io/images/favicon.ico><link rel=stylesheet href=https://handnew04.github.io/css/style.css><link rel=stylesheet href=https://handnew04.github.io/css/monosocialiconsfont.css><link href=https://handnew04.github.io/index.xml rel=alternate type=application/rss+xml title="Handnew's blog"><link rel=stylesheet href=https://handnew04.github.io/css/rainbow.css><script src=https://handnew04.github.io/css/highlight.pack.js></script><script>hljs.initHighlightingOnLoad();</script><script data-ad-client=ca-pub-2907304965705395 async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script></head><body><nav class=main-nav><a href=https://handnew04.github.io/><span class=arrow>←</span>Home</a>
+<a href=https://github.com/handnew04 target=_blank>About</a>
+<a href=https://handnew04.github.io/posts>Archive</a>
+<a href=https://handnew04.github.io/tags>Tags</a>
+<a href=https://handnew04.github.io/search>Search</a></nav><section id=wrapper class=post><article><header><h1>[디자인패턴] Adapter Pattern</h1><h2 class=headline>Apr 21, 2019 16:11
+· 459 words
+· 1 minute read
+<span class=tags><a href=https://handnew04.github.io/tags/designpattern>DesignPattern</a>
+<a href=https://handnew04.github.io/tags/adapter>adapter</a></span></h2></header><div id=toc><nav id=TableOfContents><ul><li><a href=#adapter란>Adapter란?</a><ul><li><a href=#reference>Reference</a></li></ul></li></ul></nav></div><section id=post-body><h2 id=adapter란>Adapter란?</h2><hr><ul><li>기계, 기구 등을 다목적으로 사용하기 위한 부가기구</li><li>전기 110v 코드를 220v 로 바꿔주는 것 또한 어댑터</li></ul><p>코드에서도 마찬가지로 사용처에 맞게 변환을 해주는 역할을 한다.</p><p>Math 라는 클래스가 있고 메서드는 double로 값을 받고 리턴값도 double 로 내보낸다.</p><pre><code>public class Math {
     public static double twoTime(double num) {
         return num * 2;
     }
@@ -100,17 +15,15 @@
         return num / 2;
     }
 }
-</code></pre><p>adapter 인터페이스</p>
-<pre><code>public interface Adapter {
+</code></pre><p>adapter 인터페이스</p><pre><code>public interface Adapter {
 
     //원하는 기능
     public Float twiceOf(Float f);
     public Float halfOf(Float f);
 
 }
-</code></pre><p>어댑터 인터페이스를 구현할 클래스<!-- raw HTML omitted -->
-double로 매개변수와 리턴값을 가진 twoTime 메서드를 float타입으로 사용할 수 있게 코드를 작성</p>
-<pre><code>public class AdapterImpl implements Adapter {
+</code></pre><p>어댑터 인터페이스를 구현할 클래스
+double로 매개변수와 리턴값을 가진 twoTime 메서드를 float타입으로 사용할 수 있게 코드를 작성</p><pre><code>public class AdapterImpl implements Adapter {
 
     @Override
     public Float twiceOf(Float f) {
@@ -123,9 +36,8 @@ double로 매개변수와 리턴값을 가진 twoTime 메서드를 float타입�
         return (float)Math.half(f.doubleValue());
     }
 }
-</code></pre><p>메인 클래스<!-- raw HTML omitted -->
-어댑터 인터페이스를 통해 double이 아닌 float 타입 사용 가능</p>
-<pre><code>public class Main {
+</code></pre><p>메인 클래스
+어댑터 인터페이스를 통해 double이 아닌 float 타입 사용 가능</p><pre><code>public class Main {
     public static void main(String[] args) {
         Adapter adapter = new AdapterImpl();
 
@@ -134,83 +46,11 @@ double로 매개변수와 리턴값을 가진 twoTime 메서드를 float타입�
 
     }
 }
-</code></pre><p>만약 halfOf 메서드를 사용할 때 출력문을 추가해야 한다면, Math 클래스의 메서드에 직접 추가시 Math를 사용하는 모든 코드에서 출력문이 추가되는 사태 발생<!-- raw HTML omitted -->
-그래서 인터페이스를 구현한 클래스 AdapterImpl의 메서드에 추가<!-- raw HTML omitted --></p>
-<pre><code>  @Override
+</code></pre><p>만약 halfOf 메서드를 사용할 때 출력문을 추가해야 한다면, Math 클래스의 메서드에 직접 추가시 Math를 사용하는 모든 코드에서 출력문이 추가되는 사태 발생
+그래서 인터페이스를 구현한 클래스 AdapterImpl의 메서드에 추가</p><pre><code>  @Override
     public Float halfOf(Float f) {
         System.out.println(&quot;절반 함수 호출&quot;);
         return (float)Math.half(f.doubleValue());
     }
-</code></pre><!-- raw HTML omitted -->
-<h3 id="reference">Reference</h3>
-<ul>
-<li><a href="https://youtu.be/gJDZ7pcvlAU">자바 디자인 패턴의 이해</a></li>
-</ul>
-
-                </section>
-            </article>
-         
-
-            
-
-            
-
-            
-          
-
-
-<script src="https://utteranc.es/client.js"
-repo="handnew04/handnew04.github.io"
-issue-term="title"
-theme="github-light"
-crossorigin="anonymous"
-async>
-</script>
-
-
-            <footer id="footer">
-    
-    <p class="small">
-    
-       © Yujung 2020 <i class="fa fa-heart" aria-hidden="true"></i> 
-    
-    </p>
-    <p class="small">
-        
-        <a href="https://handnew04.github.io/index.xml" type="application/rss+xml" target="_blank"><i class="fas fa-rss"></i>RSS</a>
-        
-       / Powered by <a href="http://www.gohugo.io/">Hugo</a> Theme By <a href="https://github.com/nodejh/hugo-theme-cactus-plus">nodejh</a>
-    </p>
-</footer>
-
-        </section>
-   
-        <script src="https://handnew04.github.io/js/jquery-3.3.1.min.js"></script>
-<script src="https://handnew04.github.io/js/main.js"></script>
-
-
-
-
-
-  
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-137481057-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-
-
-
-
-
-
-       
-    </body>
-</html>
+</code></pre><h3 id=reference>Reference</h3><ul><li><a href=https://youtu.be/gJDZ7pcvlAU>자바 디자인 패턴의 이해</a></li></ul></section></article><script src=https://utteranc.es/client.js repo=handnew04/handnew04.github.io issue-term=title theme=github-light crossorigin=anonymous async></script><footer id=footer><p class=small>© Yujung 2020 <i class="fa fa-heart" aria-hidden=true></i></p><p class=small><a href=https://handnew04.github.io/index.xml type=application/rss+xml target=_blank><i class="fas fa-rss"></i>RSS</a>
+/ Powered by <a href=http://www.gohugo.io/>Hugo</a> Theme By <a href=https://github.com/nodejh/hugo-theme-cactus-plus>nodejh</a></p></footer></section><script src=https://handnew04.github.io/js/jquery-3.3.1.min.js></script><script src=https://handnew04.github.io/js/main.js></script><script type=application/javascript>var doNotTrack=false;if(!doNotTrack){(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create','UA-137481057-1','auto');ga('send','pageview');}</script></body></html>
